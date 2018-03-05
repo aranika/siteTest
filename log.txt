@@ -1,0 +1,4 @@
+мар. 05, 2018 7:10:27 ПП org.openqa.selenium.remote.RemoteWebDriver log
+SEVERE: Executing: get [73cfe939caa5b7a2c43b79d14843cc48, get {url=http://google.ru}]
+мар. 05, 2018 7:10:32 ПП org.openqa.selenium.remote.RemoteWebDriver log
+SEVERE: Executed: [73cfe939caa5b7a2c43b79d14843cc48, get {url=http://google.ru}]
