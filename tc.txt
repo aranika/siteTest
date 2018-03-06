@@ -1,0 +1,21 @@
+Function: Log In
+1. Log In - pos
+	1) e-mail - ok, pass - ok
+2. Log In - neg
+	1) e-mail - empty, pass - ok
+	2) e-mail - ok, pass - emty
+	3) e-mail - fail, pass - ok
+	4) e-mail - ok, pass - fail
+	5) e-mail - empty, pass - empty
+	6) e-mail - fail, pass - fail
+Function: Send Message
+3. Send mess - pos
+	1) press ok
+	2) press enter
+4. 
+
+
+
+
+
+#js_3ls > div._1j2v > div._2dck._4-u3._4-u8 > div > div._ohf.rfloat > div > button - отправить на стене
