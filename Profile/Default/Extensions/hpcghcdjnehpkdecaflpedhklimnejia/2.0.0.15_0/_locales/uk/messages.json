@@ -1,0 +1,14 @@
+{
+   "extDescription": {
+      "description": "Ukraine",
+      "message": "Швидкий доступ до пошуку та інших сервісів Яндекса"
+   },
+   "extName": {
+      "description": "Ukraine",
+      "message": "Стартова — Яндекс"
+   },
+   "searchLocale": {
+      "description": "Ukraine",
+      "message": "fr"
+   }
+}

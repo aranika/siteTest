@@ -1,0 +1,22 @@
+{
+   "background": {
+      "persistent": true,
+      "scripts": [ "background/background.js", "js/libs/jquery.js", "js/utils/utils.js", "js/application_core/jquery-core.js", "js/application_core/jquery-core.js", "js/application_core/file-system.js", "js/sandbox/facade.js", "js/config/config.js", "background/modules.js", "integration/distribution/distribution-module.js", "integration/distribution/background.js", "integration/unity/unity-stub-background.js" ]
+   },
+   "chrome_url_overrides": {
+      "newtab": "visual-bookmarks.html"
+   },
+   "content_security_policy": "script-src 'self' https://ssl.google-analytics.com 'unsafe-eval'; object-src 'self'",
+   "icons": {
+      "128": "images/128x128.png",
+      "16": "images/16x16.png",
+      "48": "images/48x48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuCwXn2QN5ZDIFM32+YcZx9eDTqEyNgvIK1oD+gIQ+hHVoTe+xQztYA1J7ge3d1zdgYIMdq5FxQpHLdVkKFzmyIqx/B6wc6tuihQCX7g7S2xaTGTjPeLIdM7tZrHmTp7k/1pLQ0HBr8yzpW12bo5sDwxMhBlSXiK4Oon8NiK6iNDErawYQzTwuSkfXsxY5RvB82fgOO7on/JC8+V8IfeKL5v5JMP82Oqx3jcv/h72yczREvgkGgwTF61+M3Yq1BEi/hjFop2lkUWW3qKUuJiBODWYeSnDE9DCRP96PAHN+Ah/Z9Pjy+vu0mb1CpZnIbOjbAa2Y3GsNnvCEzxHcV285wIDAQAB",
+   "manifest_version": 2,
+   "name": "Визуальные Закладки Mail.Ru",
+   "optional_permissions": [ "notifications", "webNavigation", "webRequest" ],
+   "permissions": [ "cookies", "bookmarks", "history", "unlimitedStorage", "management", "tabs", "chrome://favicon/", "chrome://favicon/*", "\u003Call_urls>", "alarms", "webNavigation", "notifications", "nativeMessaging" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "12.0.38"
+}

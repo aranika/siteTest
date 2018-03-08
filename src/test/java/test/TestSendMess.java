@@ -1,18 +1,10 @@
 package test;
 
-import org.testng.annotations.Test;
-
-import PageFactory.LoginPage;
-import PageFactory.MessengerPage;
-import Source.Users;
-import utility.Drivers;
-import utility.RandomWord;
-import utility.Validation;
-
+import PageFactory.*;
+import Source.*;
+import utility.*;
 import org.testng.annotations.*;
-
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebDriver;
 
 public class TestSendMess {
@@ -20,23 +12,20 @@ public class TestSendMess {
 	LoginPage objLogin;
 	MessengerPage objMessenger;
 
-//	@Test (groups= {"M"}, priority=10)
-//	public void testSendMessagePuchEnter() {
-//		String message=RandomWord.All(19);
-//			objMessenger.sendMessagePuchEnter(message);
-//	}
-	
+	@Test (groups= {"M"}, priority=100)
+	public void testSendMessagePuchEnter() {
+		String message=RandomWord.All(19);
+			objMessenger.sendMessagePuchEnter(message);
+	}
 	
 	@Test (groups= {"M"}, priority=20)
 	public void testSendMessageClickButton() {
 		String message=RandomWord.All(19);
 			objMessenger.clickFirstFriend();
-//			objMessenger.clickTextField();
-
+			objMessenger.clickTextField();
 			objMessenger.writeMessage(message);
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);	
 	}
-
 
 	@BeforeClass
 	public void before() {
@@ -48,15 +37,16 @@ public class TestSendMess {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get(objLogin.getUrlPage());
 		objLogin.toLoginPuchEnter(name, password);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
-		objMessenger = new MessengerPage(driver);	//		(new PageAfterLogin(driver)).goToMessenger();
-		driver.get(objMessenger.getUrlPage());	
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);	
+		(new PageAfterLogin(driver)).goToMessenger();
+//		driver.get(objMessenger.getUrlPage());	
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);	
 	}
 
 	@AfterClass
 	public void after() {
-//		driver.close();
-//		driver.quit();
+		driver.close();
+		driver.quit();
 	}
 }

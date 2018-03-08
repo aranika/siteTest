@@ -1,0 +1,23 @@
+{
+   "background": {
+      "scripts": [ "own/var.js", "lib/background.js", "lib/cookies.js", "own/save.js", "own/prew-backend.js" ]
+   },
+   "chrome_url_overrides": {
+      "newtab": "index.html"
+   },
+   "content_security_policy": "script-src 'self' https://ssl.google-analytics.com 'unsafe-eval'; object-src 'self'",
+   "default_locale": "ru",
+   "description": "__MSG_extDescription__",
+   "icons": {
+      "128": "icons/128.png",
+      "16": "icons/16.png",
+      "48": "icons/48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvUrUsXrzosAhhsPcdAqQwJUpmWgNLJzLFcm/qKVAEnLsH2MxjChbMns60kbetufCgyhfjganjmSAfEIGqbSooYAxoEYZfiNVsblA2b9wMYoFmFVBgPxvtZDOboFUmhegq+DooYIse7jD/e/kbkByqX9e/+rG7z5PwRvrDGv7PsXAcas9n2rqySsOiOMkzm3IQ2gPfYxYkKbqaltwMrBOxeZPv59Z0xin9d5+zKhrk2E4omXHQWohhJLa7FqTk04YGnTT24TkgQjgv3oqc6K9S3bCHBT4nUBE+HEAp5STk8I3wwDH4J01UWy4taP2efyHTmg6ag62I7JJovaM/B5bnQIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "35",
+   "name": "__MSG_extName__",
+   "permissions": [ "tabs", "\u003Call_urls>", "\u003Call_urls>", "activeTab", "desktopCapture", "tabCapture", "contextMenus", "http://*/*", "https://*/*", "cookies", "unlimitedStorage", "alarms", "topSites", "storage", "file://*/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.0.5"
+}

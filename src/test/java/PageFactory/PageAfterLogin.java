@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 public class PageAfterLogin {
 	WebDriver driver;
 	By minMessenger=By.cssSelector("[class='jewelButton _3eo8']");
-	By messenger=By.cssSelector("[class='_4djt']");
+	By messenger=By.cssSelector("#navItem_217974574879787 > a > div");//[class='_4djt']");
 	
 	By newsFeed=By.cssSelector("#navItem_4748854339>a>div");
 
@@ -21,7 +21,7 @@ public class PageAfterLogin {
 	}
 
 	public void goToMessenger() {
-		driver.findElement(minMessenger).click();
+//		driver.findElement(minMessenger).click();
 		driver.findElement(messenger).click();
 	}
 	

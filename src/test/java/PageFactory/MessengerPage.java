@@ -38,7 +38,6 @@ public class MessengerPage {
 	}
 
 	public void sendMessageClickButton(String message) {
-
 		Validation.pageURL(driver, this.getUrlPage()+"anastasia.dunets");
 		this.clickFirstFriend();
 		this.clickTextField();
@@ -48,7 +47,6 @@ public class MessengerPage {
 	}
 
 	public void sendMessagePuchEnter(String message) {
-
 		Validation.pageURL(driver, this.getUrlPage()+"anastasia.dunets");
 		this.clickFirstFriend();
 		this.clickTextField();

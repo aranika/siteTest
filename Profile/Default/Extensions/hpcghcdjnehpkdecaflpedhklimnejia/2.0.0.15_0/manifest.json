@@ -1,0 +1,23 @@
+{
+   "background": {
+      "scripts": [ "own/var.js", "lib/background.js", "lib/cookies.js" ]
+   },
+   "chrome_settings_overrides": {
+      "homepage": "https://yandex.__MSG_searchLocale__/?__PARAM__from=chromehp",
+      "startup_pages": [ "https://yandex.__MSG_searchLocale__/?__PARAM__from=chromehp" ]
+   },
+   "default_locale": "ru",
+   "description": "__MSG_extDescription__",
+   "icons": {
+      "128": "icons/128.png",
+      "16": "icons/16.png",
+      "48": "icons/48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlrbNzwEhOL/0yVminkyKbBckGMKywIfWJ3mXE5cLTZwfO0k6RKUBqkEScoodjZpdbWtx7wx6AKfH6lkoQhezLKepL+ZCZLa2kaLlu+5GMHoFHDA7Zb69tYdykbeeCEipUNn4+9ruGW+JeC7rKqkfCIi+muys3rVbWiGBm+9aPaUOfcoFfFaM3LySGsFAPwdl4lfos/oOL1e+EX4wegq5fV0DyfD21SyxupZz8BCZD8cVOP1OQdCPlc1AJC2nMdurdAGvtKWzDCvZtM+kOgGCj+AKTg4P1wE0UIszqecmppdGdMZuRjBM+shxdm87EggO7a7NALu7/s41McHICrGkTQIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "35",
+   "name": "__MSG_extName__",
+   "permissions": [ "contextMenus", "http://*/*", "https://*/*", "cookies", "unlimitedStorage", "alarms" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.0.0.15"
+}

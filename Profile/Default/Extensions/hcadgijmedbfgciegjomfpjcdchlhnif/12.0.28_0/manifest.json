@@ -1,0 +1,23 @@
+{
+   "background": {
+      "persistent": false,
+      "scripts": [ "integration/distribution/distribution-module.js", "integration/distribution/background.js", "integration/unity/unity-stub-background.js" ]
+   },
+   "chrome_settings_overrides": {
+      "homepage": "https://inline.go.mail.ru/homepage?inline_comp=hp&inline_hp_cnt=11956636",
+      "startup_pages": [ "https://inline.go.mail.ru/homepage?inline_comp=hp&inline_hp_cnt=11956636" ]
+   },
+   "description": "Быстрый переход на популярные сервисы от Mail.Ru",
+   "icons": {
+      "128": "icons/128.png",
+      "16": "icons/16.png",
+      "48": "icons/48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlk5EIG8yjj6NmhEwMMFm52PusQ4fU1OEgWfccTvj7dIANhHGDTmApB1+5UCQZSfSl+2RtQpTszKy8vDeM70SrqM9teREQ7oc2X3qHCrMcSH6d+xT1Yq+mymGUyNz0bD5Z9CCOgPLqnok7VjE3Fm29DOSI4z7OknW8lUzZLZlJyFMHAzi2dr9XLRrL7QuDRvv0zJTKarRLkCIrskWv98J71KV28EeQrefhrGDWjFAdOzVWKJso3g2v1+bZ3qPrfQNdAQh/rql5szo7vw2I+oQg5U0uCsReMLjulux5uUZEb8oV5s/ezhoBawrPhF6vP6WWSd+MmKG6uHqC4YqVGpixQIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "35",
+   "name": "Домашняя страница Mail.Ru",
+   "permissions": [ "alarms", "cookies", "nativeMessaging", "http://*/*", "https://*/*", "webNavigation" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "12.0.28"
+}

@@ -1,0 +1,34 @@
+{
+   "author": "ООО «Яндекс.Маркет»",
+   "background": {
+      "scripts": [ "sovetnik/sovetnik-vendor.js", "sovetnik/injectors/sovetnik-inject-background.min.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "19": "19.png",
+         "38": "38.png"
+      },
+      "default_popup": "sovetnik/popup/popup.html"
+   },
+   "content_scripts": [ {
+      "js": [ "sovetnik/sovetnik-vendor.js", "sovetnik/injectors/sovetnik-inject-content.min.js", "sovetnik/script/sovetnik-vendor.js", "sovetnik/script/sovetnik-templates.js", "sovetnik/script/sovetnik-internal.min.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_end"
+   } ],
+   "default_locale": "ru",
+   "description": "__MSG_extDescription__",
+   "icons": {
+      "128": "128.png",
+      "16": "16.png",
+      "32": "32.png",
+      "48": "48.png",
+      "64": "64.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjTTSEFgOlhf2eZv1J0pBRHtWst0RVRMNZiOnSOmuNU+gQTapBwh8FXdoaxLl2XnT0D7R7spkDNoq7qpcsQ8evEUcLkkBsHooEGWEnT4r/frrG4RDGr+NeiDx5Y3GV6jT/qQPhkGVJQk78cLdBA16eXFhjmfscvft0Vbx9cEnOwWW/ZDOC355Qvy7bo9BXeiRoLawYVsPlJtzyxc1INF4LQ9MnQQM2VDD9d1RayJt+Gw4ZVNdGZKuNQpC6dnAYJnzu2m+oDOJ0WXX4HdKvtU07pdVIf3wEoCrXlflX6/RhJjFCZJ+EjI3mWjeXOafvzGiAnrcRj459MKzxlZX+xlLsQIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_extName__",
+   "options_page": "options.html",
+   "permissions": [ "\u003Call_urls>", "tabs", "cookies", "management", "notifications", "webNavigation" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "3.1.12.66"
+}

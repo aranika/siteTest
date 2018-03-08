@@ -1,0 +1,14 @@
+{
+   "extDescription": {
+      "description": "Turkey",
+      "message": "Aramaya ve Yandex'in diğer servislerine hızlı erişim"
+   },
+   "extName": {
+      "description": "Turkey",
+      "message": "Ana sayfa — Yandex"
+   },
+   "searchLocale": {
+      "description": "Turkey",
+      "message": "com.tr"
+   }
+}

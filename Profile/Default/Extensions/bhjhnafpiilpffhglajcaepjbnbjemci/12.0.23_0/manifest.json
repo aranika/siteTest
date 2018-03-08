@@ -1,0 +1,29 @@
+{
+   "background": {
+      "scripts": [ "integration/distribution/distribution-module.js", "integration/distribution/background.js" ]
+   },
+   "chrome_settings_overrides": {
+      "search_provider": {
+         "encoding": "windows-1251",
+         "favicon_url": "http://go.mail.ru/favicon.ico",
+         "is_default": true,
+         "keyword": "inline.go.mail.ru",
+         "name": "Mail.Ru",
+         "search_url": "https://inline.go.mail.ru/search?inline_comp=dse&q={searchTerms}&fr=chxtn12.0.23",
+         "suggest_url": "http://suggests.go.mail.ru/chrome?q={searchTerms}"
+      }
+   },
+   "description": "Поиск от Mail.Ru в адресной строке",
+   "icons": {
+      "128": "img/128.png",
+      "16": "img/16.png",
+      "48": "img/48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoTneYmXYSleBE9JZjG7DkNwoTCn8TgokQ33O2422VOXQQg9f3QbC5prl4mrw+QNChD+XPB1SrzEkJQrdPpyOoWZVcxxpiknsM9YLNCOBolJozPyEA+o+lGtuhPN+Peq4o34MdU7t74ebAp40qnwrgxtVBsFLmag+iPfnCJ4wpI/Jz/Ymo+wUb+wdvHrdNsCaNsODcx1sgg7a4rmSssy6RKK2nCrpXNiu4rWAP7ttclQDI84RWQq7Aa0xHPYK9ritXvWZXemqcA6ZD2OygaoloOb2ogKOPsqGXVjkFok9rcSfPpwOvJ1+eHoHO8lio/brT9PVjLyQTg89F0usB0w/IQIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "49",
+   "name": "Поиск Mail.Ru",
+   "permissions": [ "alarms", "cookies", "nativeMessaging", "http://*/*", "https://*/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "12.0.23"
+}
