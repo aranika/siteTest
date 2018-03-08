@@ -6,46 +6,50 @@ import java.text.SimpleDateFormat;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class ValidationElements {
+import PageFactory.PageAfterLogin;
 
-	public boolean ValidationPageURL(WebDriver driver, String URL) {
+public class Validation {
+
+	public static boolean pageURL(WebDriver driver, String URL) {
 		if (!driver.getCurrentUrl().toString().equals(URL)) {
 			System.out.println("wrong page");
-			driver.close();
 			return false;
 		}
 		return true;
 	}
 
-	public static boolean ValidationPageByCss(WebDriver driver, String el) {
+	public static boolean pageByCss(WebDriver driver, String el) {
 		if (!(FindEl.FindElByCss(el, driver)))
 		{
 			System.out.println("wrong page");
-			driver.close();
+//			driver.close();
 			return false;
 		}
 		return true;
 	}
 
-	public boolean ValidationPageByXPath(WebDriver driver, String el) {
+	public boolean pageByXPath(WebDriver driver, String el) {
 		if (!(FindEl.FindElByXPath(el, driver)))
 		{
 			System.out.println("wrong page");
-			driver.close();
+//			driver.close();
 			return false;
 		}
 		return true;
 	}
 
-	public static boolean ValidationEmail(String actual) {
+	public static boolean Email(String actual) {
 		final Pattern pattern = Pattern.compile("^[A-Za-z0-9.%+\\-]+@[A-Za-z0-9.\\-]+\\.[A-Za-z]{2,4}");
 		final Matcher matcher = pattern.matcher(actual);
 		return matcher.find();
 	}
 
-	public static boolean ValidationPhone(String actual) {
+	public static boolean phone(String actual) {
 		final Pattern pattern = Pattern.compile("^[8]+\\-[0-9]{3}+\\-[0-9]{7}$");
 		final Matcher matcher = pattern.matcher(actual);
 		return matcher.find();
@@ -65,4 +69,15 @@ public class ValidationElements {
 		}
 	}
 
+	public static void logIn(WebDriver driver, String name, String password) {
+		try {
+			(new WebDriverWait(driver, 10)).until(ExpectedConditions.presenceOfElementLocated(By.id("userNav")));
+			System.out.println("Ok for log: "+name +", pass: "+password);
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println("fail for log: "+name +", pass: "+password);
+		}
+		(new Validation()).pageURL(driver, (new PageAfterLogin(driver).getUrlPage()));		
+
+	}
 }

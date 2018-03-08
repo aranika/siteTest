@@ -2,21 +2,16 @@ package PageFactory;
 
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.interactions.SendKeysAction;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
 	WebDriver driver;
 	By userName=By.id("email");
 	By password=By.id("pass");
-	By login=By.id("loginbutton");
+	By loginButton=By.id("loginbutton");
 	
 	public LoginPage(WebDriver driver) {
-		// TODO Auto-generated constructor stub
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
@@ -28,10 +23,10 @@ public class LoginPage {
 		driver.findElement(password).sendKeys(strPassword);
 	}
 	public void clickLogin() {
-		driver.findElement(login).click();
+		driver.findElement(loginButton).click();
 	}
 	
-	public void toLoginClickOk(String strLog, String strPassword) {
+	public void toLoginClickButton(String strLog, String strPassword) {
 		this.setLog(strLog);
 		this.setPassword(strPassword);
 		this.clickLogin(); 
@@ -41,13 +36,11 @@ public class LoginPage {
 	public void toLoginPuchEnter(String strLog, String strPassword) {
 		this.setLog(strLog);
 		this.setPassword(strPassword);
-		Actions action = new Actions(driver); 
-		action.sendKeys(Keys.ENTER); 
+		driver.findElement(password).sendKeys(Keys.ENTER); 
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	}
 
-	public String getUrlLoginPage() {
-		// TODO Auto-generated method stub
+	public String getUrlPage() {
 		return "https://www.facebook.com/";
 	}
 }

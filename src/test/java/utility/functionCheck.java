@@ -18,18 +18,17 @@ public class functionCheck {
 		WebDriver driver = Drivers.getChromeDriver();
 		LoginPage loginPage=new LoginPage(driver);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.get(loginPage.getUrlLoginPage());
-		(new ValidationElements()).ValidationPageURL(driver, loginPage.getUrlLoginPage());
+		driver.get(loginPage.getUrlPage());
+		Validation.pageURL(driver, loginPage.getUrlPage());
 		String strLog="nastya.d.1991@inbox.ru";
 		String strPassword="test1234";
-//		loginPage.toLoginClickOk(strLog, strPassword);
-		loginPage.toLoginPuchEnter(strLog, strPassword);
-		(new ValidationElements()).ValidationPageURL(driver, "https://www.facebook.com/?sk=welcome");
-
-		System.out.print("ok "
+		loginPage.toLoginClickButton(strLog, strPassword);
+//		loginPage.toLoginPuchEnter(strLog, strPassword);
+		Validation.pageURL(driver, "https://www.facebook.com/?sk=welcome");
+String s="https://www.facebook.com/?sk=welcome";
+		System.out.print("ok "+ s.equals("https://www.facebook.com/?sk=welcome")
+		
 				+" ")		;
-
-
 	}
 
 }
