@@ -39,7 +39,7 @@ public class TestSendMess {
 		objLogin.toLoginPuchEnter(name, password);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
-		(new PageAfterLogin(driver)).goToMessenger();
+		(new GeneralPage(driver)).goToMessenger();
 //		driver.get(objMessenger.getUrlPage());	
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);	
 	}

@@ -11,7 +11,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import PageFactory.PageAfterLogin;
+import PageFactory.GeneralPage;
 
 public class Validation {
 
@@ -77,7 +77,7 @@ public class Validation {
 			// TODO: handle exception
 			System.out.println("fail for log: "+name +", pass: "+password);
 		}
-		(new Validation()).pageURL(driver, (new PageAfterLogin(driver).getUrlPage()));		
+		(new Validation()).pageURL(driver, (new GeneralPage(driver).getUrlPage()));		
 
 	}
 }

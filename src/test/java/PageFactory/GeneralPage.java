@@ -4,14 +4,14 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
-public class PageAfterLogin {
+public class GeneralPage {
 	WebDriver driver;
 	By minMessenger=By.cssSelector("[class='jewelButton _3eo8']");
 	By messenger=By.cssSelector("#navItem_217974574879787 > a > div");//[class='_4djt']");
 	
 	By newsFeed=By.cssSelector("#navItem_4748854339>a>div");
 
-	public PageAfterLogin(WebDriver driver) {
+	public GeneralPage(WebDriver driver) {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
