@@ -40,10 +40,13 @@ public class TestLogIn {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get(objLogin.getUrlPage());
 		Validation.pageURL(driver, objLogin.getUrlPage());
+	
 	}
 
 		@AfterMethod
 		public void after() {
+			(new GeneralPage(driver)).toLogOut();
+			
 			driver.close();
 			driver.quit();
 		}

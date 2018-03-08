@@ -17,7 +17,7 @@ public class Validation {
 
 	public static boolean pageURL(WebDriver driver, String URL) {
 		if (!driver.getCurrentUrl().toString().equals(URL)) {
-			System.out.println("wrong page");
+			System.out.println("wrong page "+URL);
 			return false;
 		}
 		return true;

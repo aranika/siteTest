@@ -5,6 +5,8 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.PageFactory;
 
+import utility.TextareaFunctions;
+
 public class LoginPage {
 	WebDriver driver;
 	By userName=By.id("email");
@@ -17,9 +19,11 @@ public class LoginPage {
 	}
 
 	public void setLog(String strLog) {
+		TextareaFunctions.clear(driver.findElement(userName));
 		driver.findElement(userName).sendKeys(strLog);
 	}
 	public void setPassword(String strPassword) {
+		TextareaFunctions.clear(driver.findElement(password));
 		driver.findElement(password).sendKeys(strPassword);
 	}
 	public void clickLogin() {

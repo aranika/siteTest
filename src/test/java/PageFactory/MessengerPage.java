@@ -12,7 +12,7 @@ import utility.Validation;
 public class MessengerPage {
 	WebDriver driver;
 	By firstFriend=By.cssSelector("ul[aria-label*='Conv'] img:nth-of-type(1)");
-	By textField=By.cssSelector("[class='_3-8x _3oh-']");
+	By textField=By.cssSelector("[class='_5rpb'] [aria-autocomplete='list']");
 	By sendButton = By.cssSelector("div[class='_4rv4']>a");
 
 	public MessengerPage(WebDriver driver) {
@@ -37,18 +37,19 @@ public class MessengerPage {
 		driver.findElement(sendButton).click();
 	}
 
-	public void sendMessageClickButton(String message) {
-		Validation.pageURL(driver, this.getUrlPage()+"anastasia.dunets");
+	public void goToDialogFirstFrind() {
 		this.clickFirstFriend();
+		Validation.pageURL(driver, this.getUrlPage()+"anastasia.dunets");
+	}
+
+	public void sendMessageClickButton(String message) {
 		this.clickTextField();
 		this.writeMessage(message);
-		 this.clickSendButton();
+		this.clickSendButton();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	}
 
 	public void sendMessagePuchEnter(String message) {
-		Validation.pageURL(driver, this.getUrlPage()+"anastasia.dunets");
-		this.clickFirstFriend();
 		this.clickTextField();
 		this.writeMessage(message);
 		driver.findElement(textField).sendKeys(Keys.ENTER); 
