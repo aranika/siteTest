@@ -7,6 +7,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
+import utility.TextareaFunctions;
 import utility.Validation;
 
 public class MessengerPage {
@@ -28,11 +29,6 @@ public class MessengerPage {
 		driver.findElement(firstFriend).click();
 	}
 
-	public void writeMessage(String message) {
-		driver.findElement(textField).sendKeys(message);	
-	}
-
-
 	public void clickSendButton() {
 		driver.findElement(sendButton).click();
 	}
@@ -44,14 +40,14 @@ public class MessengerPage {
 
 	public void sendMessageClickButton(String message) {
 		this.clickTextField();
-		this.writeMessage(message);
+		TextareaFunctions.writeMessage("Button "+ message, driver, textField);
 		this.clickSendButton();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	}
 
 	public void sendMessagePuchEnter(String message) {
 		this.clickTextField();
-		this.writeMessage(message);
+		TextareaFunctions.writeMessage("Enter "+ message, driver, textField);
 		driver.findElement(textField).sendKeys(Keys.ENTER); 
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	}

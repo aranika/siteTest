@@ -1,18 +1,23 @@
 Function: Log In
-1. Log In - pos
+--Log In - pos
 	1) e-mail - ok, pass - ok
-2. Log In - neg
-	1) e-mail - empty, pass - ok
-	2) e-mail - ok, pass - emty
-	3) e-mail - fail, pass - ok
-	4) e-mail - ok, pass - fail
-	5) e-mail - empty, pass - empty
-	6) e-mail - fail, pass - fail
+--Log In - neg
+	2) e-mail - empty, pass - ok
+	3) e-mail - ok, pass - emty
+	4) e-mail - fail, pass - ok
+	5) e-mail - ok, pass - fail
+	6) e-mail - empty, pass - empty
+	7) e-mail - fail, pass - fail
 Function: Send Message
-3. Send mess - pos
-	1) press ok
-	2) press enter
-4. 
+--Send mess - pos
+	8) press ok
+	9) press enter
+Function: Post News
+--Post Links - pos
+	10) Post 1 Link
+	11) Post 1 LInk and comment
+	12) Post 2 Links
+	13) Post many links
 
 
 

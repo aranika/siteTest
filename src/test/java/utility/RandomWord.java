@@ -47,6 +47,13 @@ public class RandomWord {
 			sb.append(c);
 		}
 		return sb.toString();
+		
 	}
-
+	public static String Sentence(int length) {
+		String s = "";
+		for(int i=0; i<length; i++) {
+			s=s+ All(i)+" ";
+		}
+		return s;
+	}
 }

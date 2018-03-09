@@ -6,6 +6,7 @@
       <class name="test.TestSendMess">
         <methods>
           <include name="testSendMessageClickButton"/>
+          <include name="after"/>
           <include name="testSendMessagePuchEnter"/>
           <include name="before"/>
         </methods>

@@ -15,13 +15,13 @@ public class TestSendMess {
 
 	@Test (groups= {"M"}, priority=100)
 	public void testSendMessagePuchEnter() {
-		String message=RandomWord.All(19);
+		String message=RandomWord.Sentence(11);
 		objMessenger.sendMessagePuchEnter(message);
 	}
 
 	@Test (groups= {"M"}, priority=20)
 	public void testSendMessageClickButton() {
-		String message=RandomWord.All(19);
+		String message=RandomWord.Sentence(12);
 		objMessenger.sendMessageClickButton(message);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);	
 	}
