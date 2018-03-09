@@ -1,17 +1,16 @@
 package PageFactory;
 
-import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.PageFactory;
-
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.*;
+import utility.Drivers;
 import utility.TextareaFunctions;
 
 public class NewsFeedPage {
 
 	WebDriver driver;
-	By textArea=By.cssSelector("div [class='_3eny']>div>div:nth-of-type(2)");
+	By textArea=By.cssSelector(" div.clearfix._ikh > div._4bl9");
+	By textInput=By.cssSelector(" div._5rpb > div");
 	By buttonPost=By.cssSelector("button span");
 
 	public NewsFeedPage(WebDriver driver) {
@@ -19,11 +18,20 @@ public class NewsFeedPage {
 		PageFactory.initElements(driver, this);
 	}
 
-	public void postNews(String message) {
+	public void postNewsClickButton(String message) {
+		Drivers.waiter(driver, textArea);
 		driver.findElement(textArea).click();
-		TextareaFunctions.writeText(message, driver, textArea);
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		TextareaFunctions.writeText(message, driver,textInput);
 		driver.findElement(buttonPost).click();
+		Drivers.waiter(driver, textArea);
+	}
+
+	public void postNewsPushEnter(String message) {	
+		Drivers.waiter(driver, textArea);
+		driver.findElement(textArea).click();
+		TextareaFunctions.writeText(message, driver,textInput);
+		driver.findElement(textInput).sendKeys(Keys.chord(Keys.CONTROL, Keys.ENTER));
+		Drivers.waiter(driver, textArea);
 	}
 
 	public String getUrlPage() {

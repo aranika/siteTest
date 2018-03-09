@@ -1,8 +1,10 @@
 package utility;
 
 
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.*;
+import org.openqa.selenium.remote.*;
+import org.openqa.selenium.support.ui.*;
 
 import PageFactory.GeneralPage;
 
@@ -19,5 +21,15 @@ public class Drivers {
 		(new GeneralPage(driver)).toLogOut();
 		driver.close();
 		driver.quit();
+	}
+
+	public static void waiter(WebDriver driver, By textArea) {
+
+		DesiredCapabilities capabilities = new DesiredCapabilities();
+		capabilities.setCapability(CapabilityType.PAGE_LOAD_STRATEGY, "eager");
+		WebDriverWait wait = new WebDriverWait(driver, 100);
+		wait.until(ExpectedConditions.presenceOfElementLocated(textArea));
+		wait.until(ExpectedConditions.elementToBeClickable(textArea));
+		
 	}
 }

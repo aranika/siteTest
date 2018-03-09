@@ -5,7 +5,7 @@
     <classes>
       <class name="test.TestPostNews">
         <methods>
-          <include name="testSendMessageClickButton"/>
+          <include name="testSendMessagePushEnter"/>
           <include name="afterClass"/>
           <include name="beforeClass"/>
         </methods>

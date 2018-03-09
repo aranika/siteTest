@@ -1,17 +1,12 @@
 package utility;
 
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import java.text.*;
+import java.util.regex.*;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.*;
 
-import PageFactory.GeneralPage;
+import PageFactory.*;
 
 public class Validation {
 
@@ -77,7 +72,7 @@ public class Validation {
 			// TODO: handle exception
 			System.out.println("fail for log: "+name +", pass: "+password);
 		}
-		(new Validation()).pageURL(driver, (new GeneralPage(driver).getUrlPage()));		
+		Validation.pageURL(driver, (new GeneralPage(driver).getUrlPage()));		
 
 	}
 }

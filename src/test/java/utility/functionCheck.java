@@ -1,14 +1,5 @@
 package utility;
-import java.sql.Driver;
-import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.remote.service.DriverService;
-
-import com.sun.jna.platform.win32.WinNT.LOGICAL_PROCESSOR_RELATIONSHIP;
-
-import PageFactory.*;
-import Source.Links;
+import Source.*;
 
 
 public class functionCheck {
