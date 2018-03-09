@@ -4,7 +4,6 @@ import org.testng.annotations.*;
 import PageFactory.*;
 import Source.*;
 import utility.*;
-import java.util.concurrent.*;
 import org.openqa.selenium.*;
 
 
@@ -37,17 +36,11 @@ public class TestLogIn {
 	public void before() {
 		driver=Drivers.getChromeDriver();
 		objLogin=new LoginPage(driver);
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.get(objLogin.getUrlPage());
-		Validation.pageURL(driver, objLogin.getUrlPage());
-	
+		LoginPage.goToLoginPage(objLogin, driver);
 	}
 
 		@AfterMethod
 		public void after() {
-			(new GeneralPage(driver)).toLogOut();
-			
-			driver.close();
-			driver.quit();
+			Drivers.LogOutDriverExit(driver);
 		}
 }

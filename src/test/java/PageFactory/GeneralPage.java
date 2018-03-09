@@ -27,6 +27,7 @@ public class GeneralPage {
 		driver.findElement(minMessenger).click();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.findElement(messenger).click();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 
 	public void goToNewsFeed() {

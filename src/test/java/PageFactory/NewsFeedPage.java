@@ -11,7 +11,7 @@ import utility.TextareaFunctions;
 public class NewsFeedPage {
 
 	WebDriver driver;
-	By textArea=By.cssSelector("div.clearfix._ikh > div._4bl9 > div > div > div > div");
+	By textArea=By.cssSelector("div [class='_3eny']>div>div:nth-of-type(2)");
 	By buttonPost=By.cssSelector("button span");
 
 	public NewsFeedPage(WebDriver driver) {
@@ -21,9 +21,9 @@ public class NewsFeedPage {
 
 	public void postNews(String message) {
 		driver.findElement(textArea).click();
-		TextareaFunctions.writeMessage(message, driver, textArea);
+		TextareaFunctions.writeText(message, driver, textArea);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.findElement(buttonPost);
+		driver.findElement(buttonPost).click();
 	}
 
 	public String getUrlPage() {

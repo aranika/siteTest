@@ -40,14 +40,14 @@ public class MessengerPage {
 
 	public void sendMessageClickButton(String message) {
 		this.clickTextField();
-		TextareaFunctions.writeMessage("Button "+ message, driver, textField);
+		TextareaFunctions.writeText("Button "+ message, driver, textField);
 		this.clickSendButton();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	}
 
 	public void sendMessagePuchEnter(String message) {
 		this.clickTextField();
-		TextareaFunctions.writeMessage("Enter "+ message, driver, textField);
+		TextareaFunctions.writeText("Enter "+ message, driver, textField);
 		driver.findElement(textField).sendKeys(Keys.ENTER); 
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	}

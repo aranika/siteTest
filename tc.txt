@@ -14,15 +14,8 @@ Function: Send Message
 	9) press enter
 Function: Post News
 --Post Links - pos
-	10) Post 1 Link
-	11) Post 1 LInk and comment
-	12) Post 2 Links
-	13) Post many links
-
-
-
-
-
-#js_3ls > div._1j2v > div._2dck._4-u3._4-u8 > div > div._ohf.rfloat > div > button - отправить на стене
-
-https://www.facebook.com/messages/t/anastasia.dunets - ссобщения
+	10) Post text
+	11) Post 1 Link
+	12) Post 1 Link and text
+	13) Post 2 Links
+	14) Post many links

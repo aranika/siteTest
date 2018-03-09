@@ -1,10 +1,8 @@
 package test;
 
 import PageFactory.*;
-import Source.*;
 import utility.*;
 import org.testng.annotations.*;
-import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 
 public class TestSendMess {
@@ -22,33 +20,23 @@ public class TestSendMess {
 	@Test (groups= {"M"}, priority=20)
 	public void testSendMessageClickButton() {
 		String message=RandomWord.Sentence(12);
-		objMessenger.sendMessageClickButton(message);
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);	
+		objMessenger.sendMessageClickButton(message);	
 	}
 
 	@BeforeClass
 	public void before() {
-		String name=(String)(new Users()).getUsers()[0][0];
-		String password=(String)(new Users()).getUsers()[0][1];
 		driver=Drivers.getChromeDriver();
+
 		objGeneral=new GeneralPage(driver);
 		objMessenger = new MessengerPage(driver);
 		objLogin=new LoginPage(driver); 
-
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.get(objLogin.getUrlPage());
-
-		objLogin.toLoginPuchEnter(name, password);
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
-		objGeneral.goToMessenger();
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);	
+		
+		LoginPage.logIn(objLogin, driver);
+		objGeneral.goToMessenger();		
 	}
 
 	@AfterClass
 	public void after() {
-		objGeneral.toLogOut();
-		driver.close();
-		driver.quit();
+		Drivers.LogOutDriverExit(driver);
 	}
 }

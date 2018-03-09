@@ -14,7 +14,7 @@ public class TextareaFunctions {
 		e.sendKeys("");
 	}
 	
-	public static void writeMessage(String message, WebDriver driver, By textField) {
+	public static void writeText(String message, WebDriver driver, By textField) {
 		TextareaFunctions.clear(driver.findElement(textField));
 		driver.findElement(textField).sendKeys(message);	
 	}
