@@ -34,19 +34,18 @@ public class TestPostNews {
 	}
 	
 	@Test (groups= {"N"}, dataProvider = "dp", priority=40)
-	public void testPostLinksPushEnter() {
-		message="PushEnter "+RandomWord.Sentence(5);
+	@Parameters(value= {"link"})
+	public void testPostLinksPushEnter(String link) {
+		message=link+" PushEnter ";
 		objNewsFeed.postNewsPushEnter(message);
 	}
 	
 	@Test (groups= {"N"}, dataProvider = "dp", priority=50)
-	public void testPostLinksClickEnter() {
-		message="PushEnter "+RandomWord.Sentence(5);
-		objNewsFeed.postNewsPushEnter(message);
+	@Parameters(value= {"link"})
+	public void testPostLinksClickButton(String link) {
+		message=link+" "+this.getClass().getTypeName();
+		objNewsFeed.postNewsClickButton(message);
 	}
-	
-	
-	//X0M4-QL5K-RPZE-ACVF-DGU6
 
 	@BeforeClass
 	public void beforeClass() {
