@@ -50,10 +50,10 @@ public class RandomWord {
 		
 	}
 	public static String Sentence(int length) {
-		String s = "";
+		String s = "s";
 		for(int i=0; i<length; i++) {
 			s=s+ All(i)+" ";
 		}
-		return s;
+		return s+".";
 	}
 }

@@ -1,33 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-03-09T17:54:06Z" name="Default suite" finished-at="2018-03-09T17:54:42Z" duration-ms="36093">
+  <suite started-at="2018-03-14T22:47:50Z" name="Default suite" finished-at="2018-03-14T22:50:11Z" duration-ms="140920">
     <groups>
-      <group name="N">
-        <method signature="TestPostNews.testSendMessageClickButton()[pri:20, instance:test.TestPostNews@27462a88]" name="testSendMessageClickButton" class="test.TestPostNews"/>
-        <method signature="TestPostNews.testSendMessagePushEnter()[pri:30, instance:test.TestPostNews@27462a88]" name="testSendMessagePushEnter" class="test.TestPostNews"/>
-      </group> <!-- N -->
+      <group name="LogIn">
+        <method signature="TestLogIn.testLoginClickButton(java.lang.String, java.lang.String)[pri:20, instance:test.TestLogIn@20140db9]" name="testLoginClickButton" class="test.TestLogIn"/>
+        <method signature="TestLogIn.testLoginPuchEnter(java.lang.String, java.lang.String)[pri:10, instance:test.TestLogIn@20140db9]" name="testLoginPuchEnter" class="test.TestLogIn"/>
+      </group> <!-- LogIn -->
     </groups>
-    <test started-at="2018-03-09T17:54:06Z" name="Default test" finished-at="2018-03-09T17:54:42Z" duration-ms="36093">
-      <class name="test.TestPostNews">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test.TestPostNews@27462a88]" started-at="2018-03-09T17:54:06Z" name="beforeClass" finished-at="2018-03-09T17:54:20Z" duration-ms="14092" status="PASS">
+    <test started-at="2018-03-14T22:47:50Z" name="Default test" finished-at="2018-03-14T22:50:11Z" duration-ms="140920">
+      <class name="test.TestLogIn">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test.TestLogIn@20140db9]" started-at="2018-03-14T22:47:50Z" name="beforeClass" finished-at="2018-03-14T22:47:51Z" duration-ms="233" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="testSendMessageClickButton()[pri:20, instance:test.TestPostNews@27462a88]" started-at="2018-03-09T17:54:20Z" name="testSendMessageClickButton" finished-at="2018-03-09T17:54:29Z" duration-ms="8235" status="PASS">
+        <test-method is-config="true" signature="before()[pri:0, instance:test.TestLogIn@20140db9]" started-at="2018-03-14T22:47:51Z" name="before" finished-at="2018-03-14T22:47:56Z" duration-ms="4897" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSendMessageClickButton -->
-        <test-method signature="testSendMessagePushEnter()[pri:30, instance:test.TestPostNews@27462a88]" started-at="2018-03-09T17:54:29Z" name="testSendMessagePushEnter" finished-at="2018-03-09T17:54:36Z" duration-ms="7247" status="PASS">
+        </test-method> <!-- before -->
+        <test-method signature="testLoginPuchEnter(java.lang.String, java.lang.String)[pri:10, instance:test.TestLogIn@20140db9]" started-at="2018-03-14T22:47:56Z" name="testLoginPuchEnter" data-provider="dp" finished-at="2018-03-14T22:48:00Z" duration-ms="4739" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[nastya.d.1991@inbox.ru]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test1234]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSendMessagePushEnter -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:test.TestPostNews@27462a88]" started-at="2018-03-09T17:54:36Z" name="afterClass" finished-at="2018-03-09T17:54:42Z" duration-ms="6463" status="PASS">
+        </test-method> <!-- testLoginPuchEnter -->
+        <test-method is-config="true" signature="after()[pri:0, instance:test.TestLogIn@20140db9]" started-at="2018-03-14T22:48:00Z" name="after" finished-at="2018-03-14T22:48:07Z" duration-ms="6269" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- test.TestPostNews -->
+        </test-method> <!-- after -->
+        <test-method is-config="true" signature="before()[pri:0, instance:test.TestLogIn@20140db9]" started-at="2018-03-14T22:48:07Z" name="before" finished-at="2018-03-14T22:48:11Z" duration-ms="4740" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method signature="testLoginPuchEnter(java.lang.String, java.lang.String)[pri:10, instance:test.TestLogIn@20140db9]" started-at="2018-03-14T22:48:11Z" name="testLoginPuchEnter" data-provider="dp" finished-at="2018-03-14T22:48:53Z" duration-ms="41451" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tes]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginPuchEnter -->
+        <test-method is-config="true" signature="after()[pri:0, instance:test.TestLogIn@20140db9]" started-at="2018-03-14T22:48:53Z" name="after" finished-at="2018-03-14T22:49:04Z" duration-ms="10770" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method is-config="true" signature="before()[pri:0, instance:test.TestLogIn@20140db9]" started-at="2018-03-14T22:49:04Z" name="before" finished-at="2018-03-14T22:49:08Z" duration-ms="4173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method signature="testLoginClickButton(java.lang.String, java.lang.String)[pri:20, instance:test.TestLogIn@20140db9]" started-at="2018-03-14T22:49:08Z" name="testLoginClickButton" data-provider="dp" finished-at="2018-03-14T22:49:13Z" duration-ms="4908" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[nastya.d.1991@inbox.ru]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginClickButton -->
+        <test-method is-config="true" signature="after()[pri:0, instance:test.TestLogIn@20140db9]" started-at="2018-03-14T22:49:13Z" name="after" finished-at="2018-03-14T22:49:19Z" duration-ms="6085" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method is-config="true" signature="before()[pri:0, instance:test.TestLogIn@20140db9]" started-at="2018-03-14T22:49:19Z" name="before" finished-at="2018-03-14T22:49:24Z" duration-ms="4732" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method signature="testLoginClickButton(java.lang.String, java.lang.String)[pri:20, instance:test.TestLogIn@20140db9]" started-at="2018-03-14T22:49:24Z" name="testLoginClickButton" data-provider="dp" finished-at="2018-03-14T22:50:06Z" duration-ms="42070" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tes]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginClickButton -->
+        <test-method is-config="true" signature="after()[pri:0, instance:test.TestLogIn@20140db9]" started-at="2018-03-14T22:50:06Z" name="after" finished-at="2018-03-14T22:50:11Z" duration-ms="5811" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- test.TestLogIn -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

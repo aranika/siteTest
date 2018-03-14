@@ -3,8 +3,12 @@ package PageFactory;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
+
+import utility.Log;
 
 public class GeneralPage {
 	WebDriver driver;
@@ -36,14 +40,18 @@ public class GeneralPage {
 
 	public void goToUserLabel() {
 		driver.findElement(userNavigationLabel).click();
+		Log.info("User Navigation Label found and click.");
 	}
 	public void toLogOut(){
+		(new Actions(driver)).sendKeys(Keys.F5);
 		try {
 			goToUserLabel();
 			driver.findElement(logOut).click();
+			Log.info("LogOut link found and click.");
 		}
 		catch (Exception e) {
 			// TODO: handle exception
+			Log.error("Error with Go To User Label or LogOut link.");
 		}
 
 	}

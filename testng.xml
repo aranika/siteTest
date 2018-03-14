@@ -2,18 +2,26 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 	<test name="test suit">
-
 		<groups>
 			<define name="all">
-				<include name="L"></include>
-				<include name="M"></include>
-				<include name="N"></include>
+				<include name="LogIn"></include>
+				<include name="Message"></include>
+				<include name="News"></include>
+			</define>
+			<define name="deleteMess">
+				<include name="BeforeNews"></include>
+				<include name="Delete"></include>			
+				<include name="Delete"></include>
+				
 			</define>
 			<run>
+			
+				<include name="deleteMess" />
 			</run>
 		</groups>
 		<packages>
 			<package name="test" />
 		</packages>
-	</test> <!-- <classes> <class name="test.TestLogIn"></class> </classes> Test -->
+	</test>
+	<!-- Test -->
 </suite> <!-- Suite -->

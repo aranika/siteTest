@@ -8,6 +8,7 @@ Function: Log In
 	5) e-mail - ok, pass - fail
 	6) e-mail - empty, pass - empty
 	7) e-mail - fail, pass - fail
+	...
 Function: Send Message
 --Send mess - pos
 	8) press ok
@@ -17,5 +18,3 @@ Function: Post News
 	10) Post text
 	11) Post 1 Link
 	12) Post 1 Link and text
-	13) Post 2 Links
-	14) Post many links

@@ -10,23 +10,24 @@ public class TestSendMess {
 	LoginPage objLogin;
 	MessengerPage objMessenger;
 	GeneralPage objGeneral;
+	String message;
 
-	@Test (groups= {"M"}, priority=100)
+	@Test (groups= {"Message"}, priority=100)
 	public void testSendMessagePuchEnter() {
-		String message=RandomWord.Sentence(11);
+		message=RandomWord.Sentence(11);
 		objMessenger.sendMessagePuchEnter(message);
 	}
 
-	@Test (groups= {"M"}, priority=20)
+	@Test (groups= {"Message"}, priority=20)
 	public void testSendMessageClickButton() {
-		String message=RandomWord.Sentence(12);
+		message=RandomWord.Sentence(12);
 		objMessenger.sendMessageClickButton(message);	
 	}
-
-	@BeforeClass
+	
+	@BeforeClass(groups= {"Message"})
 	public void before() {
-		driver=Drivers.getChromeDriver();
-
+		driver=MyDriver.getChromeDriver();
+		
 		objGeneral=new GeneralPage(driver);
 		objMessenger = new MessengerPage(driver);
 		objLogin=new LoginPage(driver); 
@@ -35,8 +36,9 @@ public class TestSendMess {
 		objGeneral.goToMessenger();		
 	}
 
-	@AfterClass
+	@AfterClass(groups= {"Message"})
 	public void after() {
-		Drivers.LogOutDriverExit(driver);
+		MyDriver.LogOutDriverExit(driver);
 	}
+
 }

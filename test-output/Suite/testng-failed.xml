@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="test suit(failed)">
+    <groups>
+      <run>
+        <include name="deleteMess"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="test.TestPostNews">
+        <methods>
+          <include name="testDeleteLastNews"/>
+          <include name="before"/>
+        </methods>
+      </class> <!-- test.TestPostNews -->
+    </classes>
+  </test> <!-- test suit(failed) -->
+</suite> <!-- Failed suite [Suite] -->

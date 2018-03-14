@@ -1,20 +1,18 @@
 package PageFactory;
 
-import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.PageFactory;
 
-import utility.TextareaFunctions;
-import utility.Validation;
+import utility.*;
 
 public class MessengerPage {
 	WebDriver driver;
 	By firstFriend=By.cssSelector("ul[aria-label*='Conv'] img:nth-of-type(1)");
 	By textField=By.cssSelector("[class='_5rpb'] [aria-autocomplete='list']");
+	By sendedMessage=By.cssSelector("div[class=_aok] > span");
 	By sendButton = By.cssSelector("div[class='_4rv4']>a");
+	By statusIcon=By.cssSelector("[class*='_2her']");
 
 	public MessengerPage(WebDriver driver) {
 		this.driver=driver;
@@ -40,16 +38,18 @@ public class MessengerPage {
 
 	public void sendMessageClickButton(String message) {
 		this.clickTextField();
-		TextareaFunctions.writeText("Button "+ message, driver, textField);
+		message = "Button "+ message;
+		TextareaFunctions.writeText(message, driver, textField);
 		this.clickSendButton();
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		Validation.sendMessage(driver, FindEl.getLastElement(sendedMessage, driver), message,statusIcon);
 	}
 
 	public void sendMessagePuchEnter(String message) {
 		this.clickTextField();
-		TextareaFunctions.writeText("Enter "+ message, driver, textField);
+		message="Enter "+ message;
+		TextareaFunctions.writeText(message, driver, textField);
 		driver.findElement(textField).sendKeys(Keys.ENTER); 
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		Validation.sendMessage(driver, FindEl.getLastElement(sendedMessage, driver), message,statusIcon);
 	}
 
 	public String getUrlPage() {

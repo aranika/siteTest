@@ -1,0 +1,172 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 58720256 bytes for Failed to commit area from 0x00000000c8c00000 to 0x00000000cc400000 of length 58720256.
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (t:/workspace/hotspot/src/os/windows/vm/os_windows.cpp:3357), pid=5016, tid=8272
+#
+# JRE version:  (9.0+11) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (9.0.4+11, mixed mode, tiered, compressed oops, g1 gc, windows-amd64)
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -ea -Dfile.encoding=Cp1251 org.testng.remote.RemoteTestNG -serport 36195 -protocol json -d D:\eclipse-workspace\git\siteTest\test-output C:\Users\user\AppData\Local\Temp\testng-eclipse--1062599762\testng-customsuite.xml
+
+Host: AMD A4-4300M APU with Radeon(tm) HD Graphics   , 2 cores, 3G,  Windows 10 , 64 bit Build 16299 (10.0.16299.15)
+Time: Sat Mar 10 12:01:02 2018 Aaea?onu (ceia) elapsed time: 0 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000002383cab3000):  JavaThread "Unknown thread" [_thread_in_vm, id=8272, stack(0x0000007cb5000000,0x0000007cb5100000)]
+
+Stack: [0x0000007cb5000000,0x0000007cb5100000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x587068]
+V  [jvm.dll+0x69c25e]
+V  [jvm.dll+0x69d17a]
+V  [jvm.dll+0x69d7b3]
+V  [jvm.dll+0x21d198]
+V  [jvm.dll+0x584bb4]
+V  [jvm.dll+0x57a095]
+V  [jvm.dll+0x2cd67b]
+V  [jvm.dll+0x2cd5e3]
+V  [jvm.dll+0x2cd4b2]
+V  [jvm.dll+0x2cf4b3]
+V  [jvm.dll+0x3191e3]
+V  [jvm.dll+0x3198f6]
+V  [jvm.dll+0x3192e3]
+V  [jvm.dll+0x2adeb8]
+V  [jvm.dll+0x2af0e7]
+V  [jvm.dll+0x67b34d]
+V  [jvm.dll+0x67c70c]
+V  [jvm.dll+0x3269c9]
+V  [jvm.dll+0x66555e]
+V  [jvm.dll+0x391811]
+V  [jvm.dll+0x3937c1]
+C  [javaw.exe+0x3501]
+C  [javaw.exe+0xe25f]
+C  [javaw.exe+0xe406]
+C  [KERNEL32.DLL+0x11fe4]
+C  [ntdll.dll+0x6efc1]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+  0x000002383cacc000 GCTaskThread "GC Thread#0" [stack: 0x0000007cb5100000,0x0000007cb5200000] [id=6716]
+  0x000002383cacd800 GCTaskThread "GC Thread#1" [stack: 0x0000007cb5200000,0x0000007cb5300000] [id=4896]
+  0x000002383cb09800 ConcurrentGCThread "G1 Main Marker" [stack: 0x0000007cb5600000,0x0000007cb5700000] [id=6756]
+  0x000002383cb0b800 ConcurrentGCThread "G1 Marker#0" [stack: 0x0000007cb5700000,0x0000007cb5800000] [id=740]
+  0x000002383cad4800 ConcurrentGCThread "G1 Refine#0" [stack: 0x0000007cb5400000,0x0000007cb5500000] [id=5632]
+  0x000002383cad0800 ConcurrentGCThread "G1 Refine#1" [stack: 0x0000007cb5300000,0x0000007cb5400000] [id=8004]
+  0x000002383cad5800 ConcurrentGCThread "G1 Young RemSet Sampling" [stack: 0x0000007cb5500000,0x0000007cb5600000] [id=1648]
+
+=>0x000002383cab3000 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=8272, stack(0x0000007cb5000000,0x0000007cb5100000)]
+
+Threads with active compile tasks:
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x000002383cab1830] Heap_lock - owner thread: 0x000002383cab3000
+
+Heap address: 0x00000000c8c00000, size: 884 MB, Compressed Oops mode: Non-zero based: 0x00000000c8c00000
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 0
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x00007ff797620000 - 0x00007ff79765e000 	C:\Program Files\Java\jdk-9.0.4\bin\javaw.exe
+0x00007ff87b780000 - 0x00007ff87b960000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ff879060000 - 0x00007ff87910e000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ff877ba0000 - 0x00007ff877e06000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ff878e40000 - 0x00007ff878ee1000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ff87b380000 - 0x00007ff87b41d000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ff8797f0000 - 0x00007ff87984b000 	C:\WINDOWS\System32\sechost.dll
+0x00007ff878d20000 - 0x00007ff878e3f000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ff87b420000 - 0x00007ff87b5af000 	C:\WINDOWS\System32\USER32.dll
+0x00007ff877b80000 - 0x00007ff877ba0000 	C:\WINDOWS\System32\win32u.dll
+0x00007ff879850000 - 0x00007ff879878000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ff878660000 - 0x00007ff8787f3000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ff878a80000 - 0x00007ff878b1b000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ff878560000 - 0x00007ff878656000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ff86bc70000 - 0x00007ff86bed9000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.16299.251_none_15c7cfda9365a4c7\COMCTL32.dll
+0x00007ff879a40000 - 0x00007ff879d48000 	C:\WINDOWS\System32\combase.dll
+0x00007ff878b20000 - 0x00007ff878b92000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007ff873f00000 - 0x00007ff873f0a000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ff879e00000 - 0x00007ff879e2d000 	C:\WINDOWS\System32\IMM32.DLL
+0x00007ff85d150000 - 0x00007ff85d23f000 	C:\Program Files\Java\jdk-9.0.4\bin\msvcr120.dll
+0x00007ff862ed0000 - 0x00007ff862f76000 	C:\Program Files\Java\jdk-9.0.4\bin\msvcp120.dll
+0x000000006e700000 - 0x000000006f125000 	C:\Program Files\Java\jdk-9.0.4\bin\server\jvm.dll
+0x00007ff879e30000 - 0x00007ff879e38000 	C:\WINDOWS\System32\PSAPI.DLL
+0x00007ff86eb50000 - 0x00007ff86eb59000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ff879760000 - 0x00007ff8797cc000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ff874b80000 - 0x00007ff874ba3000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ff874b50000 - 0x00007ff874b7a000 	C:\WINDOWS\SYSTEM32\WINMMBASE.dll
+0x00007ff878c00000 - 0x00007ff878c4a000 	C:\WINDOWS\System32\cfgmgr32.dll
+0x00007ff8682f0000 - 0x00007ff8682ff000 	C:\Program Files\Java\jdk-9.0.4\bin\verify.dll
+0x00007ff865ca0000 - 0x00007ff865cc7000 	C:\Program Files\Java\jdk-9.0.4\bin\java.dll
+0x00007ff866130000 - 0x00007ff866146000 	C:\Program Files\Java\jdk-9.0.4\bin\zip.dll
+0x00007ff868150000 - 0x00007ff86815a000 	C:\Program Files\Java\jdk-9.0.4\bin\jimage.dll
+0x00007ff8596d0000 - 0x00007ff859898000 	C:\WINDOWS\SYSTEM32\dbghelp.dll
+
+VM Arguments:
+jvm_args: -ea -Dfile.encoding=Cp1251 
+java_command: org.testng.remote.RemoteTestNG -serport 36195 -protocol json -d D:\eclipse-workspace\git\siteTest\test-output C:\Users\user\AppData\Local\Temp\testng-eclipse--1062599762\testng-customsuite.xml
+java_class_path (initial): D:\eclipse\eclipse\configuration\org.eclipse.osgi\513\0\.cp\lib\testng-remote.jar;D:\eclipse-workspace\git\siteTest\target\test-classes;D:\eclipse-workspace\git\siteTest\target\classes;C:\Users\user\.p2\pool\plugins\org.testng_6.14.2.r201802161450.jar;C:\Users\user\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar;C:\Users\user\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar;C:\Users\user\.p2\pool\plugins\org.yaml.snakeyaml_1.17.0.jar;C:\Users\user\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-java\2.53.1\selenium-java-2.53.1.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\2.53.1\selenium-chrome-driver-2.53.1.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\2.53.1\selenium-remote-driver-2.53.1.jar;C:\Users\user\.m2\repository\cglib\cglib-nodep\2.1_3\cglib-nodep-2.1_3.jar;C:\Users\user\.m2\repository\com\google\code\gson\gson\2.3.1\gson-2.3.1.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-api\2.53.1\selenium-api-2.53.1.jar;C:\Users\user\.m2\repository\org\apache\httpcomponents\httpclient\4.5.1\httpclient-4.5.1.jar;C:\Users\user\.m2\repository\org\apache\httpcomponents\httpcore\4.4.3\httpcore-4.4.3.jar;C:\Users\user\.m2\repository\com\google\guava\guava\19.0\guava-19.0.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\2.53.1\selenium-edge-driver-2.53.1.jar;C:\Users\user\.m2\repository\commons-io\commons-io\2.4\commons-io-2.4.jar;C:\Users\user\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\htmlunit-driver\2.21\htmlunit-driver-2.21.jar;C:\Users\user\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.21\htmlunit-2.21.jar;C:\Users\user\.m2\repository\xalan\xalan\2.7.2\xalan-2.7.2.jar;C:\Users\user\.m2\repository\xalan\serializer\2.7.2\serializer-2.7.2.jar;C:\Users\user\.m2\repositor
+Launcher Type: SUN_STANDARD
+
+Logging:
+Log output configuration:
+#0: stdout all=warning uptime,level,tags
+#1: stderr all=off uptime,level,tags
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk-9.0.4\
+PATH=C:/Program Files/Java/jdk-9.0.4/bin/server;C:/Program Files/Java/jdk-9.0.4/bin;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\AMD\ATI.ACE\Core-Static;C:\Program Files\Java\jdk-9.0.4\bin;C:\Program Files (x86)\apache-jmeter-2.10\bin;D:\maven\bin;C:\Users\user\AppData\Local\Microsoft\WindowsApps;;C:\Users\user\Desktop;
+USERNAME=user
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=AMD64 Family 21 Model 16 Stepping 1, AuthenticAMD
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10 , 64 bit Build 16299 (10.0.16299.15)
+
+CPU:total 2 (initial active 2) (2 cores per cpu, 1 threads per core) family 21 model 16 stepping 1, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, aes, clmul, mmxext, 3dnowpref, lzcnt, sse4a, tsc, tscinvbit, tscinv, bmi1
+
+Memory: 4k page, physical 3616880k(950208k free), swap 5714032k(5628k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (9.0.4+11) for windows-amd64 JRE (9.0.4+11), built on Dec 20 2017 02:18:54 by "mach5one" with MS VC++ 12.0 (VS2013)
+
+END.

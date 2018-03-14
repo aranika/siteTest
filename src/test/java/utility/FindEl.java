@@ -1,52 +1,74 @@
 package utility;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import java.util.*;
+import java.util.NoSuchElementException;
+
+import org.openqa.selenium.*;
 
 public class FindEl {	
 
-	public static boolean FindElByCss(String el, WebDriver driver) {
+	public static boolean findElByCssIsDisplayed(String el, WebDriver driver) {
 		try {
 			driver.findElement(By.cssSelector(el)).isDisplayed();
 			return true;
-		} 
-		catch (NoSuchElementException e) {
-			// TODO: handle exception
+		} 	catch (NoSuchElementException e) {
 			System.err.println(e);
 			return false;
 		}
 	}
 
-	public static boolean FindElByXPath(String xpathExpression, WebDriver driver) {
+	public static boolean findElementIsDisplayed(By el, WebDriver driver) {
+		try {
+			driver.findElement(el).isDisplayed();
+			return true;
+		} 		catch (NoSuchElementException e) {
+			System.err.println(e);
+			return false;
+		}
+	}
+	public static boolean findElByXPathIsDisplayed(String xpathExpression, WebDriver driver) {
 		try {
 			driver.findElement(By.xpath(xpathExpression)).isDisplayed();
 			return true;
-		} 
-		catch (NoSuchElementException e) {
-			// TODO: handle exception
+		} 		catch (NoSuchElementException e) {
 			System.err.println(e);
 			return false;
 		}
 	}
 
-	public static String getValueByCss(String selector, WebDriver driver) {
-	
-		
-		if(FindElByCss(selector, driver)) {
-			WebElement el= (driver.findElement(By.cssSelector(selector)));
-//			System.out.println(el);
-			return el.getAttribute("value");
+	public static WebElement getLastElement(String selector, WebDriver driver) {
+		List<WebElement> list = driver.findElements(By.cssSelector(selector));
+		int n=list.size();
+		WebElement w=list.get(n-1);
+		return w;
+	}
+	public static WebElement getLastElement(By selector, WebDriver driver) {
+		List<WebElement> list = driver.findElements(selector);
+		int n=list.size();
+		WebElement w=list.get(n-1);
+		return w;
+	}
+	//	public static String getAttributeByCss(String attribute, String selector, WebDriver driver) {
+	//		if(findElByCssIsDisplayed(selector, driver)) {
+	//			WebElement el= (driver.findElement(By.cssSelector(selector)));
+	//			return el.getAttribute(attribute);
+	//		}
+	//		return "error";
+	//	}
+	//
+	//	public static String getValueByXPath(String xpathExpression, WebDriver driver) {
+	//		WebElement el=(driver.findElement(By.xpath(xpathExpression)));
+	//		if(findElByXPathIsDisplayed(xpathExpression, driver)) {
+	//			return el.getAttribute("value");
+	//		}
+	//		return "error";
+	//	}
+
+	public static String getAttribute(String attribute, By selector, WebDriver driver) {
+		if(findElementIsDisplayed(selector, driver)) {
+			WebElement el= (driver.findElement(selector));
+			return el.getAttribute(attribute);
 		}
 		return "error";
-	}
-
-	public static String getValueByXPath(String xpathExpression, WebDriver driver) {
-		WebElement el=(driver.findElement(By.xpath(xpathExpression)));
-		if(FindElByXPath(xpathExpression, driver)) {
-			return el.getAttribute("value");
-		}
-		return "";
 	}
 }

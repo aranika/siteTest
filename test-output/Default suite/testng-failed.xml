@@ -5,9 +5,9 @@
     <classes>
       <class name="test.TestPostNews">
         <methods>
-          <include name="testSendMessagePushEnter"/>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
+          <include name="after"/>
+          <include name="before"/>
+          <include name="testPostLinksTextPushEnter" invocation-numbers="0"/>
         </methods>
       </class> <!-- test.TestPostNews -->
     </classes>

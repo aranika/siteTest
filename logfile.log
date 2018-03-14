@@ -1,0 +1,38 @@
+2018-03-15 01:47:54,235 INFO  [TestLogIn] Get new Driver 
+2018-03-15 01:47:56,118 INFO  [Log] Go To Login Page 
+2018-03-15 01:47:56,139 INFO  [Log] Correct  page https://www.facebook.com/ 
+2018-03-15 01:47:56,777 INFO  [Log] E-mail  text box found and input text nastya.d.1991@inbox.ru 
+2018-03-15 01:47:57,170 INFO  [Log] Password  text box found and input text test1234 
+2018-03-15 01:48:00,729 INFO  [Log] Puch Enter 
+2018-03-15 01:48:00,794 INFO  [Log] Ok for log: nastya.d.1991@inbox.ru, pass: test1234 
+2018-03-15 01:48:00,878 INFO  [Log] Correct  page https://www.facebook.com/?sk=welcome 
+2018-03-15 01:48:01,454 INFO  [Log] User Navigation Label found and click. 
+2018-03-15 01:48:04,141 INFO  [Log] LogOut link found and click. 
+2018-03-15 01:48:10,021 INFO  [TestLogIn] Get new Driver 
+2018-03-15 01:48:11,874 INFO  [Log] Go To Login Page 
+2018-03-15 01:48:11,891 INFO  [Log] Correct  page https://www.facebook.com/ 
+2018-03-15 01:48:12,339 INFO  [Log] E-mail  text box found and input text tes 
+2018-03-15 01:48:12,710 INFO  [Log] Password  text box found and input text test1234 
+2018-03-15 01:48:43,298 INFO  [Log] Puch Enter 
+2018-03-15 01:48:53,335 ERROR [Log] Fail for log: tes, pass: test1234 
+2018-03-15 01:48:53,343 ERROR [Log] Wrong page. Current Url-<https://www.facebook.com/login.php?login_attempt=1&lwv=111>, expected URL -<https://www.facebook.com/?sk=welcome> 
+2018-03-15 01:49:03,412 ERROR [Log] Error with Go To User Label or LogOut link. 
+2018-03-15 01:49:06,172 INFO  [TestLogIn] Get new Driver 
+2018-03-15 01:49:08,262 INFO  [Log] Go To Login Page 
+2018-03-15 01:49:08,286 INFO  [Log] Correct  page https://www.facebook.com/ 
+2018-03-15 01:49:08,894 INFO  [Log] E-mail  text box found and input text nastya.d.1991@inbox.ru 
+2018-03-15 01:49:09,277 INFO  [Log] Password  text box found and input text test1234 
+2018-03-15 01:49:12,998 INFO  [Log] Button LogIn found and click 
+2018-03-15 01:49:13,105 INFO  [Log] Ok for log: nastya.d.1991@inbox.ru, pass: test1234 
+2018-03-15 01:49:13,194 INFO  [Log] Correct  page https://www.facebook.com/?sk=welcome 
+2018-03-15 01:49:13,553 INFO  [Log] User Navigation Label found and click. 
+2018-03-15 01:49:16,511 INFO  [Log] LogOut link found and click. 
+2018-03-15 01:49:21,939 INFO  [TestLogIn] Get new Driver 
+2018-03-15 01:49:23,993 INFO  [Log] Go To Login Page 
+2018-03-15 01:49:24,013 INFO  [Log] Correct  page https://www.facebook.com/ 
+2018-03-15 01:49:24,446 INFO  [Log] E-mail  text box found and input text tes 
+2018-03-15 01:49:24,841 INFO  [Log] Password  text box found and input text test1234 
+2018-03-15 01:49:55,451 INFO  [Log] Button LogIn found and click 
+2018-03-15 01:50:06,065 ERROR [Log] Fail for log: tes, pass: test1234 
+2018-03-15 01:50:06,083 ERROR [Log] Wrong page. Current Url-<https://www.facebook.com/login.php?login_attempt=1&lwv=111>, expected URL -<https://www.facebook.com/?sk=welcome> 
+2018-03-15 01:50:11,096 ERROR [Log] Error with Go To User Label or LogOut link. 
