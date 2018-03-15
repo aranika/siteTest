@@ -4,10 +4,7 @@ package PageFactory;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.*;
-import utility.MyDriver;
-import utility.FindEl;
-import utility.TextareaFunctions;
-import utility.Validation;
+import utility.*;
 
 public class NewsFeedPage {
 

@@ -5,7 +5,6 @@ import PageFactory.*;
 import Source.*;
 import utility.*;
 
-import org.apache.bcel.generic.LALOAD;
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.*;
