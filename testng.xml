@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+	
 	<test name="test suit">
+
 		<groups>
 			<define name="all">
 				<include name="LogIn"></include>
@@ -10,13 +16,12 @@
 			</define>
 			<define name="deleteMess">
 				<include name="BeforeNews"></include>
-				<include name="Delete"></include>			
 				<include name="Delete"></include>
-				
+				<include name="Delete"></include>
 			</define>
 			<run>
-			
-				<include name="deleteMess" />
+
+				<include name="LogIn" />
 			</run>
 		</groups>
 		<packages>

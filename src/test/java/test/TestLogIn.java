@@ -21,13 +21,13 @@ public class TestLogIn {
 		Object[][] s=(new Users()).getShortListUsers();
 		return s;
 	}
-
-	@Test (groups= {"LogIn"}, dataProvider = "dp", priority=20)
-	@Parameters(value= {"name","password"})
-	public void testLoginClickButton(String name, String password) {
-		objLogin.toLoginClickButton(name, password); 
-		Validation.logIn(driver, name, password);		
-	}
+//
+//	@Test (groups= {"LogIn"}, dataProvider = "dp", priority=20)
+//	@Parameters(value= {"name","password"})
+//	public void testLoginClickButton(String name, String password) {
+//		objLogin.toLoginClickButton(name, password); 
+//		Validation.logIn(driver, name, password);		
+//	}
 
 	@Test (groups= {"LogIn"}, dataProvider = "dp", priority=10)
 	@Parameters(value= {"name","password"})

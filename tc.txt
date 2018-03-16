@@ -1,20 +1,136 @@
 Function: Log In
---Log In - pos
-	1) e-mail - ok, pass - ok
---Log In - neg
-	2) e-mail - empty, pass - ok
-	3) e-mail - ok, pass - emty
-	4) e-mail - fail, pass - ok
-	5) e-mail - ok, pass - fail
-	6) e-mail - empty, pass - empty
-	7) e-mail - fail, pass - fail
-	...
+	1) Check Customer Login with valid Data
+		Test Steps
+			1. Go to site https://www.facebook.com/
+			2. Enter E-mail "nastya.d.1991@inbox.ru"
+			3. Enter Password "test1234"
+			4. Click Submit
+		Expected Results
+			User should Login into application
+	
+	2) Check Customer Login with empty e-mail, valid password
+		Test Steps
+			1. Go to site https://www.facebook.com/
+			2.  E-mail is empty
+			3. Enter Password "test1234"
+			4. Click Submit
+		Expected Results
+			User should not Login into application
+	
+	3) Check Customer Login with valid e-mail, emty password
+		Test Steps
+			1. Go to site https://www.facebook.com/
+			2. Enter  E-mail "nastya.d.1991@inbox.ru"
+			3. Password  is empty
+			4. Click Submit
+		Expected Results
+			User should not Login into application
+	
+	4) Check Customer Login with empty e-mail and password
+		Test Steps
+			1. Go to site https://www.facebook.com/
+			2. E-mail is empty
+			3. Password  is empty
+			4. Click Submit
+		Expected Results
+			User should not Login into application
+	
+	5) Check Customer Login with invalid e-mail, valid password
+		Test Steps
+			1. Go to site https://www.facebook.com/
+			2. Enter invalid E-mail
+			3. Enter Password "test1234"
+			4. Click Submit
+		Expected Results
+			User should not Login into application
+	
+	6) Check Customer Login with valid e-mail, invalid password
+		Test Steps
+			1. Go to site https://www.facebook.com/
+			2. Enter E-mail "nastya.d.1991@inbox.ru"
+			3. Enter invalid Password
+			4. Click Submit
+		Expected Results
+			User should not Login into application
+	
+	
+	
+	7) Check Customer Login with valid e-mail, invalid password
+		Test Steps
+			1. Go to site https://www.facebook.com/
+			2. Enter invalid E-mail
+			3. Enter invalid Password
+			4. Click Submit
+		Expected Results
+			User should not Login into application
+
 Function: Send Message
---Send mess - pos
-	8) press ok
-	9) press enter
+	8) Send a message to a friend by pressing the "Send" button
+		Precondition: 
+			Login and go to messagePage (click Messages ->See All in Messenger -> first friend on the friend list)
+		Test Steps
+			1. Enter a message.
+			2. Click  the "Send" button
+		Expected Results
+			The message is sent and displayed in the message list
+
+	9) Send a message to a friend by pressing the "ENTER" button
+		Precondition: 
+			Login and go to messagePage (click links: Messages ->See All in Messenger -> first friend on the friend list)
+		Test Steps
+			1. Enter a message.
+			2. Press  the "ENTER"
+		Expected Results
+			The message is sent and displayed in the message list
 Function: Post News
---Post Links - pos
-	10) Post text
-	11) Post 1 Link
-	12) Post 1 Link and text
+	10) Post text on newsFeedPage by pressing the "Post" button
+		Precondition: 
+			Login and go to newsFeedPage (click link News Feed)
+		Test Steps
+			1. Enter text without links in the news area
+			2. Click  the  "Post" button
+		Expected Results
+			News are published and displayed in the news feed
+	11) Post text on newsFeedPage by pressing the "ENTER" button
+		Precondition: 
+			Login and go to newsFeedPage (click link News Feed)
+		Test Steps
+			1. Enter text without links in the news area
+			2. Press  the  "ENTER" button
+		Expected Results
+			News are published and displayed in the news feed
+			
+	13) Post 1 link on newsFeedPage by pressing the "Post" button
+		Precondition: 
+			Login and go to newsFeedPage (click link News Feed)
+		Test Steps
+			1. Enter 1 link in the news area
+			2. Click  the  "Post" button
+		Expected Results
+			News are published and displayed in the news feed as a text-link
+	14) Post 1 link on newsFeedPage by pressing the "ENTER" button
+		Precondition: 
+			Login and go to newsFeedPage (click link News Feed)
+		Test Steps
+			1. Enter 1 link in the news area
+			2. Press  the  "ENTER" button
+		Expected Results
+			News are published and displayed in the news feed as a text-link
+			
+	15) Post 1 link and text on newsFeedPage by pressing the "Post" button
+		Precondition: 
+			Login and go to newsFeedPage (click link News Feed)
+		Test Steps
+			1. Enter 1 link and text in the news area
+			2. Click  the  "Post" button
+		Expected Results
+			News are published and displayed in the news feed. News is text-link, text and link with a preview.
+	
+	16) Post 1 link and text on newsFeedPage by pressing the "ENTER" button
+	Precondition: 
+			Login and go to newsFeedPage (click link News Feed)
+		Test Steps
+			1. Enter 1 link and text in the news area
+			2. Press  the  "ENTER" button
+		Expected Results
+			News are published and displayed in the news feed. News is text-link, text and link with a preview.
