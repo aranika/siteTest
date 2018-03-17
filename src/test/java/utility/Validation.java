@@ -42,12 +42,9 @@ public class Validation {
 	public static void logIn(WebDriver driver, String name, String password) {
 		try {
 			(new WebDriverWait(driver, 10)).until(ExpectedConditions.presenceOfElementLocated(By.id("userNav")));
-			System.out.println("Ok for log: "+name +", pass: "+password);
 			Log.info("Ok for log: "+name +", pass: "+password);
 		} catch (Exception e) {
-			// TODO: handle exception
-			System.out.println("fail for log: "+name +", pass: "+password);
-			Log.error("Fail for log: "+name +", pass: "+password);
+			Log.info("Fail for log: "+name +", pass: "+password);
 		}
 		Validation.pageURL(driver, (new GeneralPage(driver).getUrlPage()));		
 	}
@@ -56,17 +53,17 @@ public class Validation {
 		MyDriver.waitText(driver, webElement, message);
 		boolean sentIcon=FindEl.getAttribute("title", selectorIcon, driver).equals("Sent");
 		if(webElement.isDisplayed()&&sentIcon) {
-			System.out.println("Successful send message: "+message);
+			Log.info("Successful send message: "+message);
 		}
-		else System.out.println("ERROR! Message: "+message);
+		else Log.error("Fail for send message: "+message);
 	}
 
 	public static void postNews(WebDriver driver, By textArea, By newPost, String news) {
 		MyDriver.waiter(driver, textArea, newPost, news);
 		if(driver.findElement(newPost).isDisplayed()) {
-			System.out.println("Successful post news: "+news);
+			Log.info("Successful post news: "+news);
 		}
-		else	System.out.println("ERROR! News: "+news);
+		else Log.error("Fail for post news: "+news);
 	}
 	public static void deleteNews(WebDriver driver, By newsForDelete, String textNewsForDelete) {
 		boolean b;
@@ -74,9 +71,9 @@ public class Validation {
 		try {
 			texLasttNews= driver.findElement(newsForDelete).getText();
 		} catch (Exception e) {
-			System.err.println(e);
+			Log.error(e.toString());
 		}
 		b=(texLasttNews.equals(textNewsForDelete));
-		System.out.println(b+" for delete last news");
+		Log.info(b+" for delete last news");
 	}
 }

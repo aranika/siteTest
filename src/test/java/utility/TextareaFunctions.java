@@ -1,16 +1,15 @@
 package utility;
 
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.*;
 
 public class TextareaFunctions {
 
-	public static void clear(WebElement e) {
-		e.click();
-		e.sendKeys(Keys.chord(Keys.CONTROL, Keys.HOME));
-		e.sendKeys(Keys.chord(Keys.CONTROL, Keys.SHIFT, Keys.END));
-		e.sendKeys("");
+	public static void clear(WebElement textField) {
+		textField.click();
+		textField.sendKeys(Keys.chord(Keys.CONTROL, Keys.HOME));
+		textField.sendKeys(Keys.chord(Keys.CONTROL, Keys.SHIFT, Keys.END));
+		textField.sendKeys("");
 	}
 
 	public static void writeText(String message, WebDriver driver, By textField) {

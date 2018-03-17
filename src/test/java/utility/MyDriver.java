@@ -15,6 +15,7 @@ public class MyDriver {
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("user-data-dir=/Profile");
 		ChromeDriver driver = new ChromeDriver(options);
+		Log.info("Get new Driver");
 		return driver;
 	}
 
@@ -22,14 +23,19 @@ public class MyDriver {
 		(new GeneralPage(driver)).toLogOut();
 		driver.close();
 		driver.quit();
+		Log.info("Close and quit Driver");
 	}
 
 	public static void waitElement(WebDriver driver, By textArea) {
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		capabilities.setCapability(CapabilityType.PAGE_LOAD_STRATEGY, "eager");
 		WebDriverWait wait = new WebDriverWait(driver, 100);
-		wait.until(ExpectedConditions.presenceOfElementLocated(textArea));
-		wait.until(ExpectedConditions.elementToBeClickable(textArea));
+		try {
+			wait.until(ExpectedConditions.presenceOfElementLocated(textArea));
+			wait.until(ExpectedConditions.elementToBeClickable(textArea));	
+		} catch (Exception e) {
+			Log.error(e+" for textArea");
+		} 
 	}
 
 	public static void waitText(WebDriver driver, By newPost, String value) {
@@ -39,7 +45,7 @@ public class MyDriver {
 		} catch (Exception e) {
 			x=false;
 		}
-		System.out.println(x+" for <"+value+">");
+		Log.info("Result for waitText is "+x+" for <"+value+">");
 	}
 
 	public static void waitText(WebDriver driver,WebElement webElement, String value) {
@@ -49,7 +55,7 @@ public class MyDriver {
 		} catch (Exception e) {
 			x=false;
 		}
-		System.out.println(x+" for <"+value+">");
+		Log.info("Result for waitText is "+x+" for <"+value+">");
 	}
 
 	public static void waiter(WebDriver driver, By textArea, By newPost, String value) {

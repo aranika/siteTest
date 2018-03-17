@@ -46,8 +46,7 @@ public class RandomWord {
 			char c = alphabet.charAt(random);
 			sb.append(c);
 		}
-		return sb.toString();
-		
+		return sb.toString();		
 	}
 	public static String Sentence(int length) {
 		String s = "s";

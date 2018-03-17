@@ -21,9 +21,9 @@ public class LoginPage {
 
 	public void setLogPass(String strEmail, String strPassword) {
 		TextareaFunctions.writeText(strEmail, driver, Email);
-		Log.info("E-mail  text box found and input text "+strEmail);
+		Log.info("E-mail text box found and input text "+strEmail);
 		TextareaFunctions.writeText(strPassword, driver, password);
-		Log.info("Password  text box found and input text "+ strPassword);
+		Log.info("Password text box found and input text "+ strPassword);
 	}
 
 	public void clickLogin() {

@@ -55,7 +55,7 @@ Function: Log In
 	
 	
 	
-	7) Check Customer Login with valid e-mail, invalid password
+	7) Check Customer Login with invalid e-mail, invalid password
 		Test Steps
 			1. Go to site https://www.facebook.com/
 			2. Enter invalid E-mail

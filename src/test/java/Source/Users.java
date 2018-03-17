@@ -6,14 +6,15 @@ public class Users {
 
 	public Object[][] getLongListUsers() {
 		int r=(int)(Math.random()*10+17);
-		Object[][]logPas=new String [3][2];
+		Object[][]logPas=new String [r][2];
 		logPas[0][0]="nastya.d.1991@inbox.ru"; logPas[0][1]="test1234";
-		logPas[1][0]="";logPas[1][1]="";
-		logPas[2][0]="nastya.d.1991@inbox.ru"; logPas[2][1]="";
-		logPas[3][0]="";logPas[3][1]="test1234";
-		logPas[4][0]=logPas[0][0]; logPas[4][1]=RandomWord.Eng(52);
-		logPas[5][0]=RandomWord.Eng(52);logPas[5][1]=logPas[0][1];
+		logPas[1][0]="";logPas[1][1]=logPas[0][1];
+		logPas[2][0]=logPas[0][0]; logPas[2][1]="";
+		logPas[3][0]="";logPas[3][1]="";
+		logPas[4][0]=RandomWord.Eng(52);logPas[4][1]=logPas[0][1];
+		logPas[5][0]=logPas[0][0]; logPas[5][1]=RandomWord.Eng(52);		
 		logPas[6][0]=RandomWord.Eng(52);logPas[6][1]=RandomWord.Eng(52);
+		
 		logPas[7][0]=""+(Math.random()*100);logPas[7][1]=""+(Math.random()*100);
 		logPas[8][0]=logPas[0][1]; logPas[8][1]=logPas[0][0];
 		logPas[9][0]=RandomWord.Eng(52)+""+(Math.random()*100);logPas[9][1]=RandomWord.Eng(52)+""+(Math.random()*100);
@@ -30,9 +31,14 @@ public class Users {
 		return logPas;
 	}
 	public Object[][] getShortListUsers() {
-		Object[][]logPas=new String [2][2];
+		Object[][]logPas=new String [7][2];
 		logPas[0][0]="nastya.d.1991@inbox.ru"; logPas[0][1]="test1234";
-		logPas[1][0]="tes"; logPas[1][1]="test1234";
+		logPas[1][0]="";logPas[1][1]=logPas[0][1];
+		logPas[2][0]=logPas[0][0]; logPas[2][1]="";
+		logPas[3][0]="";logPas[3][1]="";
+		logPas[4][0]=RandomWord.Eng(52);logPas[4][1]=logPas[0][1];
+		logPas[5][0]=logPas[0][0]; logPas[5][1]=RandomWord.Eng(52);		
+		logPas[6][0]=RandomWord.Eng(52);logPas[6][1]=RandomWord.Eng(52);		
 		return logPas;
 	}
 	

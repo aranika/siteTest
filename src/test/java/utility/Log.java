@@ -5,14 +5,14 @@ import org.apache.log4j.Logger;
 public class Log {
 	private static Logger Log = Logger.getLogger(Log.class.getName());
 
-	public static void startTestCase(String nameTestCase) {
+	public static void startTestCases(String nameFunction) {
 		Log.info("****************************************************************");
-		Log.info("$$$$$$$$$$                 "+nameTestCase+ "       $$$$$$$$$$$$$");
+		Log.info("$$$$$$$$$$     S-T-A-R-T- Test Cases for "+nameFunction+ "       $$$$$$$$$$$$$");
 		Log.info("****************************************************************");
 	}
 
-	public static void endTestCase(String nameTestCase) {
-		Log.info("XXXXXXX            -E---N---D- "+nameTestCase+"       XXXXXXXX");
+	public static void endTestCasse(String nameFunction) {
+		Log.info("XXXXXXX         -E---N---D- Test Cases for "+nameFunction+"       XXXXXXXX");
 		Log.info("X");
 		Log.info("X");
 	}
