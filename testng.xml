@@ -15,7 +15,7 @@
 				<include name="News"></include>
 			</define>
 			<run>
-				<include name="News" />
+				<include name="All" />
 			</run>
 		</groups>
 		<packages>
