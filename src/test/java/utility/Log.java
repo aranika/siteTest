@@ -11,10 +11,10 @@ public class Log {
 		Log.info("****************************************************************");
 	}
 
-	public static void endTestCasse(String nameFunction) {
+	public static void endTestCases(String nameFunction) {
 		Log.info("XXXXXXX         -E---N---D- Test Cases for "+nameFunction+"       XXXXXXXX");
-		Log.info("X");
-		Log.info("X");
+		Log.info("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+		Log.info("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
 	}
 
 	public static void info(String message) {

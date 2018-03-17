@@ -3,6 +3,7 @@ package test;
 import PageFactory.*;
 import utility.*;
 import org.testng.annotations.*;
+import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.WebDriver;
 
 public class TestSendMess {
@@ -11,21 +12,24 @@ public class TestSendMess {
 	MessengerPage objMessenger;
 	GeneralPage objGeneral;
 	String message;
+	Integer i=0;
 
 	@Test (groups= {"Message"}, priority=100)
 	public void testSendMessagePuchEnter() {
-		message=RandomWord.Sentence(11);
+		message=RandomWord.engSentence(11);
 		objMessenger.sendMessagePuchEnter(message);
 	}
 
 	@Test (groups= {"Message"}, priority=20)
 	public void testSendMessageClickButton() {
-		message=RandomWord.Sentence(12);
+		message=RandomWord.engSentence(12);
 		objMessenger.sendMessageClickButton(message);	
 	}
 	
 	@BeforeClass(groups= {"Message"})
 	public void before() {
+		DOMConfigurator.configure("log4j.xml");
+		Log.startTestCases("Send Message");
 		driver=MyDriver.getChromeDriver();
 		
 		objGeneral=new GeneralPage(driver);
@@ -35,10 +39,18 @@ public class TestSendMess {
 		LoginPage.logIn(objLogin, driver);
 		objGeneral.goToMessenger();		
 	}
+	
+	@BeforeMethod (groups= {"Message"})
+	public void beforeM() {
+		i=i+1;
+		Log.info("---------test case#"+i+"--------------");
+	}
 
 	@AfterClass(groups= {"Message"})
 	public void after() {
 		MyDriver.LogOutDriverExit(driver);
+		Log.endTestCases("Send Message");
 	}
+	
 
 }

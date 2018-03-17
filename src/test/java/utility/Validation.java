@@ -10,7 +10,6 @@ public class Validation {
 	public static boolean pageURL(WebDriver driver, String URL) {
 		String currentUrl=driver.getCurrentUrl().toString();
 		if (!currentUrl.equals(URL)) {
-			System.out.println("wrong page "+URL);
 			Log.error("Wrong page. Current Url-<"+currentUrl+">, expected URL -<"+URL+">");
 			return false;
 		}
@@ -33,7 +32,6 @@ public class Validation {
 		if (!(FindEl.findElByXPathIsDisplayed(el, driver)))
 		{
 			Log.error("Wrong page.");
-			System.out.println("wrong page");
 			return false;
 		}
 		Log.info("Correct  page.");
@@ -65,15 +63,15 @@ public class Validation {
 		}
 		else Log.error("Fail for post news: "+news);
 	}
-	public static void deleteNews(WebDriver driver, By newsForDelete, String textNewsForDelete) {
+	public static void deleteNews(WebDriver driver, By lastNews, String textNewsForDelete) {
 		boolean b;
-		String texLasttNews="";
+		String texLastNews="";
 		try {
-			texLasttNews= driver.findElement(newsForDelete).getText();
+			texLastNews= driver.findElement(lastNews).getText();
 		} catch (Exception e) {
 			Log.error(e.toString());
 		}
-		b=(texLasttNews.equals(textNewsForDelete));
+		b=!(texLastNews.equals(textNewsForDelete));
 		Log.info(b+" for delete last news");
 	}
 }

@@ -14,7 +14,7 @@ public class Links {
 		}
 		String line = scanner.nextLine();
 		String[] fileText = line.split(",");		    
-		int i=  (int) (10*(Math.random()));
+		int i= (int) (10*(Math.random()));
 		String[]link={fileText[i]};    
 		return link;
 	}

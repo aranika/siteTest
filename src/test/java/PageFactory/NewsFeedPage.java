@@ -1,6 +1,5 @@
 package PageFactory;
 
-
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.*;
@@ -23,37 +22,51 @@ public class NewsFeedPage {
 	}
 
 	public void deleteLastNews() {
-		Actions actions = new Actions(driver);
-		actions.sendKeys(Keys.F5);
+		driver.navigate().refresh();
 		String news=driver.findElement(newPost).getText();
 		driver.findElement(optionPost).click();
 		driver.findElement(deletePost).click();
 		MyDriver.waitElement(driver, buttonDeletePost);
 		driver.findElement(buttonDeletePost).click();
-		actions.sendKeys(Keys.F5);
+		MyDriver.waitElement(driver, textArea);
+		driver.navigate().refresh();
+		MyDriver.waitElement(driver, textArea);
 		Validation.deleteNews(driver, newPost, news);
+
 	}
 
 	public void postNewsClickButton(String message) {
 		MyDriver.waitElement(driver, textArea);
 		driver.findElement(textArea).click();
+		Log.info("Find and Click TextArea");
 		TextareaFunctions.writeText(message, driver,textInput);
+		Log.info("Write news <"+message+">");
 		driver.findElement(buttonPost).click();
+		Log.info("Click Post Button");
 		Validation.postNews(driver, textArea, newPost, message);
 	}
 
-	public void postNewsPushEnter(String message) {	
+	public void postNewsPushEnter(String message){	
 		MyDriver.waitElement(driver, textArea);
 		driver.findElement(textArea).click();
+		Log.info("Find and Click TextArea");
 		TextareaFunctions.writeText(message, driver,textInput);
+		Log.info("Write news <"+message+">");
 		driver.findElement(textInput).sendKeys(Keys.chord(Keys.CONTROL, Keys.ENTER));
+		Log.info("Push <CTRL>+<Enter>");
 		Validation.postNews(driver, textArea, newPost, message);
 	}
 
 	public void findPostLink(String link) {	
 		Actions actions = new Actions(driver);
 		actions.sendKeys(Keys.F5);
-		System.out.println(FindEl.findElByCssIsDisplayed("div>[href='"+link+"']", driver)+" for link: "+link);
+		try {
+			FindEl.findElByCssIsDisplayed("div>[href='"+link+"']", driver);
+			Log.info("Link <"+link+"> is Displayed");
+		} catch (Exception e) {
+			Log.error(link+" is not Desplayed");
+			System.out.println("div>[href='"+link+"']");
+		}
 	}
 
 	public String getUrlPage() {

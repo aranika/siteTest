@@ -12,6 +12,7 @@ import org.openqa.selenium.*;
 public class TestLogIn {
 	WebDriver driver;
 	LoginPage objLogin;
+	Integer i=0;
 	
 	@DataProvider(name="dp")
 	public static Object[][] testData() {
@@ -35,6 +36,8 @@ public class TestLogIn {
 
 	@BeforeMethod(groups= {"LogIn"})
 	public void before() {
+		i=i+1;
+		Log.info("---------test case#"+i+"--------------");
 		driver=MyDriver.getChromeDriver();
 		objLogin=new LoginPage(driver);
 		LoginPage.goToLoginPage(objLogin, driver);
@@ -53,6 +56,6 @@ public class TestLogIn {
 	
 	@AfterClass(groups= {"LogIn"})
 	public void afterClass() {
-		Log.endTestCasse("LogIn");
+		Log.endTestCases("LogIn");
 	}
 }

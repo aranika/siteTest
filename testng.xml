@@ -14,14 +14,8 @@
 				<include name="Message"></include>
 				<include name="News"></include>
 			</define>
-			<define name="deleteMess">
-				<include name="BeforeNews"></include>
-				<include name="Delete"></include>
-				<include name="Delete"></include>
-			</define>
 			<run>
-
-				<include name="LogIn" />
+				<include name="News" />
 			</run>
 		</groups>
 		<packages>

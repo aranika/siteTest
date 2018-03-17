@@ -48,10 +48,23 @@ public class RandomWord {
 		}
 		return sb.toString();		
 	}
-	public static String Sentence(int length) {
-		String s = "s";
+
+	public static String engSym(int length) {
+		sb = new StringBuilder(Math.max(length, 16));
+		alphabet= "ABCDEFGHIJKLMNOPQRSTUVWXYZzyxwvutsrqponmlkjihgfedcba1234567890"
+				+ "[];',./-=`.!№;%:?)_";//32
+		for (int i = 0; i < length; i++) { 
+			int random = (int) (alphabet.length()*(Math.random()));
+			char c = alphabet.charAt(random);
+			sb.append(c);
+		}
+		return sb.toString();		
+	}
+	
+	public static String engSentence(int length) {
+		String s = " ";
 		for(int i=0; i<length; i++) {
-			s=s+ All(i)+" ";
+			s=s+ engSym(i)+" ";
 		}
 		return s+".";
 	}

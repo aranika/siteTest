@@ -30,25 +30,26 @@ public class GeneralPage {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.findElement(messenger).click();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		Log.info("Go to messenger");
 	}
 
 	public void goToNewsFeed() {
 		driver.findElement(newsFeed).click();
+		Log.info("User Navigation Label found and click.");
 	}
 
 	public void goToUserLabel() {
 		driver.findElement(userNavigationLabel).click();
-		Log.info("User Navigation Label found and click.");
+		Log.info("Found and Click User Navigation Label .");
 	}
 	public void toLogOut(){
 		(new Actions(driver)).sendKeys(Keys.F5);
 		try {
 			goToUserLabel();
 			driver.findElement(logOut).click();
-			Log.info("LogOut link found and click.");
+			Log.info("Found and Click LogOut Link.");
 		}
 		catch (Exception e) {
-			// TODO: handle exception
 			Log.error("Error with Go To User Label or LogOut link.");
 		}
 

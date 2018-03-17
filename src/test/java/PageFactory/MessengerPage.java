@@ -21,10 +21,12 @@ public class MessengerPage {
 
 	public void clickTextField() {
 		driver.findElement(textField).click();
+		Log.info("Click Text Field");
 	}
 
 	public void clickFirstFriend() {
 		driver.findElement(firstFriend).click();
+		Log.info("Click First Friend");
 	}
 
 	public void clickSendButton() {
@@ -41,6 +43,7 @@ public class MessengerPage {
 		message = "Button "+ message;
 		TextareaFunctions.writeText(message, driver, textField);
 		this.clickSendButton();
+		Log.info("Find textArea. Enter message <"+message+">. Click Send.");
 		Validation.sendMessage(driver, FindEl.getLastElement(sendedMessage, driver), message,statusIcon);
 	}
 
@@ -49,6 +52,7 @@ public class MessengerPage {
 		message="Enter "+ message;
 		TextareaFunctions.writeText(message, driver, textField);
 		driver.findElement(textField).sendKeys(Keys.ENTER); 
+		Log.info("Find textArea. Enter message <"+message+">. Push Enter.");
 		Validation.sendMessage(driver, FindEl.getLastElement(sendedMessage, driver), message,statusIcon);
 	}
 
