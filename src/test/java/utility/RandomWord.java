@@ -4,7 +4,7 @@ public class RandomWord {
 	static String alphabet;
 	static StringBuilder sb;
 
-	public static String Rus(int length) {
+	public static String rus(int length) {
 		sb = new StringBuilder(Math.max(length, 16));
 		alphabet= "абвгдеёжзийклмнопрстуфхцчшщъыьэюяАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ";//66
 		for (int i = 0; i < length; i++) { 
@@ -15,7 +15,7 @@ public class RandomWord {
 		return sb.toString();
 	}
 
-	public static String Eng(int length) {
+	public static String eng(int length) {
 		sb = new StringBuilder(Math.max(length, 16));
 		alphabet= "ABCDEFGHIJKLMNOPQRSTUVWXYZzyxwvutsrqponmlkjihgfedcba";//52
 		for (int i = 0; i < length; i++) { 
@@ -26,7 +26,7 @@ public class RandomWord {
 		return sb.toString();
 	}
 
-	public static String Sym(int length) {
+	public static String sym(int length) {
 		sb = new StringBuilder(Math.max(length, 16));
 		alphabet= "!@#$%^&*()_+|-=\\{}[]:\";'<>?,./";//32
 		for (int i = 0; i < length; i++) { 
@@ -37,10 +37,10 @@ public class RandomWord {
 		return sb.toString();
 	}
 
-	public static String All(int length) {
+	public static String all(int length) {
 		sb = new StringBuilder(Math.max(length, 16));
 		alphabet= "ABCDEFGHIJKLMNOPQRSTUVWXYZzyxwvutsrqponmlkjihgfedcba1234567890абвгдеёжзийклмно"
-				+ "прстуфхцчшщъыьэюяАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ[];',./-=`.!№;%:?)_";//32
+				+ "прстуфхцчшщъыьэюяАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ[];',./-=`.!№;%:?)_";
 		for (int i = 0; i < length; i++) { 
 			int random = (int) (alphabet.length()*(Math.random()));
 			char c = alphabet.charAt(random);
@@ -52,7 +52,7 @@ public class RandomWord {
 	public static String engSym(int length) {
 		sb = new StringBuilder(Math.max(length, 16));
 		alphabet= "ABCDEFGHIJKLMNOPQRSTUVWXYZzyxwvutsrqponmlkjihgfedcba1234567890"
-				+ "[];',./-=`.!№;%:?)_";//32
+				+ "[];',./-=`.!№;%:?)_";
 		for (int i = 0; i < length; i++) { 
 			int random = (int) (alphabet.length()*(Math.random()));
 			char c = alphabet.charAt(random);
@@ -65,6 +65,13 @@ public class RandomWord {
 		String s = " ";
 		for(int i=0; i<length; i++) {
 			s=s+ engSym(i)+" ";
+		}
+		return s+".";
+	}
+	public static String sentence(int length) {
+		String s = " ";
+		for(int i=0; i<length; i++) {
+			s=s+ all(i)+" ";
 		}
 		return s+".";
 	}

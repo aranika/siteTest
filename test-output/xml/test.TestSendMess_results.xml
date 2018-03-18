@@ -4,11 +4,11 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="12,864">
+           time="10,152">
   <properties />
   
   
-            <testcase name="testSendMessagePuchEnter" time="2,763" classname="test.TestSendMess" />
-                <testcase name="testSendMessageClickButton" time="10,101" classname="test.TestSendMess" />
+            <testcase name="testSendMessagePuchEnter" time="7,339" classname="test.TestSendMess" />
+                <testcase name="testSendMessageClickButton" time="2,813" classname="test.TestSendMess" />
       
 </testsuite>

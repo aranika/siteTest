@@ -1,0 +1,243 @@
+2018-03-18 14:16:55,854 INFO  [Log] ************************************************** 
+2018-03-18 14:16:55,855 INFO  [Log]     S-T-A-R-T- Test Cases for LogIn 
+2018-03-18 14:16:55,855 INFO  [Log] ************************************************** 
+2018-03-18 14:16:55,869 INFO  [Log] ---------test case#1-------------- 
+2018-03-18 14:16:58,890 INFO  [Log] Get new Driver 
+2018-03-18 14:17:01,204 INFO  [Log] Go To Login Page 
+2018-03-18 14:17:01,226 INFO  [Log] Correct  page https://www.facebook.com/ 
+2018-03-18 14:17:01,848 INFO  [Log] E-mail text box found and input text lena.test.86@bk.ru 
+2018-03-18 14:17:02,228 INFO  [Log] Password text box found and input text test1234 
+2018-03-18 14:17:05,336 INFO  [Log] Button LogIn found and click 
+2018-03-18 14:17:05,432 INFO  [Log] Ok for log: lena.test.86@bk.ru, pass: test1234 
+2018-03-18 14:17:05,476 INFO  [Log] Correct  page https://www.facebook.com/?sk=welcome 
+2018-03-18 14:17:05,823 INFO  [Log] Found and Click User Navigation Label . 
+2018-03-18 14:17:08,450 INFO  [Log] Found and Click LogOut Link. 
+2018-03-18 14:17:11,378 INFO  [Log] Close and quit Driver 
+2018-03-18 14:17:11,379 INFO  [Log] ---------test case#2-------------- 
+2018-03-18 14:17:13,364 INFO  [Log] Get new Driver 
+2018-03-18 14:17:15,452 INFO  [Log] Go To Login Page 
+2018-03-18 14:17:15,467 INFO  [Log] Correct  page https://www.facebook.com/ 
+2018-03-18 14:17:15,875 INFO  [Log] E-mail text box found and input text  
+2018-03-18 14:17:16,246 INFO  [Log] Password text box found and input text test1234 
+2018-03-18 14:17:19,417 INFO  [Log] Button LogIn found and click 
+2018-03-18 14:17:19,461 INFO  [Log] Ok for log: , pass: test1234 
+2018-03-18 14:17:19,484 INFO  [Log] Correct  page https://www.facebook.com/?sk=welcome 
+2018-03-18 14:17:19,899 INFO  [Log] Found and Click User Navigation Label . 
+2018-03-18 14:17:23,599 INFO  [Log] Found and Click LogOut Link. 
+2018-03-18 14:17:26,373 INFO  [Log] Close and quit Driver 
+2018-03-18 14:17:26,373 INFO  [Log] ---------test case#3-------------- 
+2018-03-18 14:17:28,397 INFO  [Log] Get new Driver 
+2018-03-18 14:17:30,559 INFO  [Log] Go To Login Page 
+2018-03-18 14:17:30,578 INFO  [Log] Correct  page https://www.facebook.com/ 
+2018-03-18 14:17:31,164 INFO  [Log] E-mail text box found and input text lena.test.86@bk.ru 
+2018-03-18 14:17:31,469 INFO  [Log] Password text box found and input text  
+2018-03-18 14:17:33,220 INFO  [Log] Button LogIn found and click 
+2018-03-18 14:17:43,834 INFO  [Log] Fail for log: lena.test.86@bk.ru, pass:  
+2018-03-18 14:17:43,866 ERROR [Log] Wrong page. Current Url-<https://www.facebook.com/login.php?login_attempt=1&lwv=111>, expected URL -<https://www.facebook.com/?sk=welcome> 
+2018-03-18 14:17:48,913 ERROR [Log] Error with Go To User Label or LogOut link. 
+2018-03-18 14:17:51,654 INFO  [Log] Close and quit Driver 
+2018-03-18 14:17:51,655 INFO  [Log] ---------test case#4-------------- 
+2018-03-18 14:17:53,643 INFO  [Log] Get new Driver 
+2018-03-18 14:17:56,045 INFO  [Log] Go To Login Page 
+2018-03-18 14:17:56,058 INFO  [Log] Correct  page https://www.facebook.com/ 
+2018-03-18 14:17:56,469 INFO  [Log] E-mail text box found and input text  
+2018-03-18 14:17:56,780 INFO  [Log] Password text box found and input text  
+2018-03-18 14:17:58,362 INFO  [Log] Button LogIn found and click 
+2018-03-18 14:18:08,948 INFO  [Log] Fail for log: , pass:  
+2018-03-18 14:18:08,956 ERROR [Log] Wrong page. Current Url-<https://www.facebook.com/login.php?login_attempt=1&lwv=111>, expected URL -<https://www.facebook.com/?sk=welcome> 
+2018-03-18 14:18:14,010 ERROR [Log] Error with Go To User Label or LogOut link. 
+2018-03-18 14:18:16,740 INFO  [Log] Close and quit Driver 
+2018-03-18 14:18:16,741 INFO  [Log] ---------test case#5-------------- 
+2018-03-18 14:18:18,749 INFO  [Log] Get new Driver 
+2018-03-18 14:18:20,857 INFO  [Log] Go To Login Page 
+2018-03-18 14:18:20,872 INFO  [Log] Correct  page https://www.facebook.com/ 
+2018-03-18 14:18:21,475 INFO  [Log] E-mail text box found and input text IPNverhRRrLcLXo 
+2018-03-18 14:18:21,841 INFO  [Log] Password text box found and input text test1234 
+2018-03-18 14:18:23,404 INFO  [Log] Button LogIn found and click 
+2018-03-18 14:18:34,031 INFO  [Log] Fail for log: IPNverhRRrLcLXo, pass: test1234 
+2018-03-18 14:18:34,038 ERROR [Log] Wrong page. Current Url-<https://www.facebook.com/login.php?login_attempt=1&lwv=111>, expected URL -<https://www.facebook.com/?sk=welcome> 
+2018-03-18 14:18:39,049 ERROR [Log] Error with Go To User Label or LogOut link. 
+2018-03-18 14:18:41,831 INFO  [Log] Close and quit Driver 
+2018-03-18 14:18:41,831 INFO  [Log] ---------test case#6-------------- 
+2018-03-18 14:18:43,814 INFO  [Log] Get new Driver 
+2018-03-18 14:18:45,994 INFO  [Log] Go To Login Page 
+2018-03-18 14:18:46,009 INFO  [Log] Correct  page https://www.facebook.com/ 
+2018-03-18 14:18:46,587 INFO  [Log] E-mail text box found and input text lena.test.86@bk.ru 
+2018-03-18 14:18:46,994 INFO  [Log] Password text box found and input text UFTHsturky 
+2018-03-18 14:18:48,810 INFO  [Log] Button LogIn found and click 
+2018-03-18 14:18:59,390 INFO  [Log] Fail for log: lena.test.86@bk.ru, pass: UFTHsturky 
+2018-03-18 14:18:59,401 ERROR [Log] Wrong page. Current Url-<https://www.facebook.com/login.php?login_attempt=1&lwv=111>, expected URL -<https://www.facebook.com/?sk=welcome> 
+2018-03-18 14:19:04,449 ERROR [Log] Error with Go To User Label or LogOut link. 
+2018-03-18 14:19:07,179 INFO  [Log] Close and quit Driver 
+2018-03-18 14:19:07,180 INFO  [Log] ---------test case#7-------------- 
+2018-03-18 14:19:09,178 INFO  [Log] Get new Driver 
+2018-03-18 14:19:11,246 INFO  [Log] Go To Login Page 
+2018-03-18 14:19:11,260 INFO  [Log] Correct  page https://www.facebook.com/ 
+2018-03-18 14:19:11,947 INFO  [Log] E-mail text box found and input text tDlaPHxTMNRXTcRbCPrZGu 
+2018-03-18 14:19:12,401 INFO  [Log] Password text box found and input text FsEArnzZqIIAhiq 
+2018-03-18 14:19:13,937 INFO  [Log] Button LogIn found and click 
+2018-03-18 14:19:24,531 INFO  [Log] Fail for log: tDlaPHxTMNRXTcRbCPrZGu, pass: FsEArnzZqIIAhiq 
+2018-03-18 14:19:24,538 ERROR [Log] Wrong page. Current Url-<https://www.facebook.com/login.php?login_attempt=1&lwv=111>, expected URL -<https://www.facebook.com/?sk=welcome> 
+2018-03-18 14:19:29,589 ERROR [Log] Error with Go To User Label or LogOut link. 
+2018-03-18 14:19:30,460 INFO  [Log] Close and quit Driver 
+2018-03-18 14:19:30,464 INFO  [Log] ---------test case#8-------------- 
+2018-03-18 14:19:32,574 INFO  [Log] Get new Driver 
+2018-03-18 14:19:34,679 INFO  [Log] Go To Login Page 
+2018-03-18 14:19:34,694 INFO  [Log] Correct  page https://www.facebook.com/ 
+2018-03-18 14:19:35,283 INFO  [Log] E-mail text box found and input text lena.test.86@bk.ru 
+2018-03-18 14:19:35,647 INFO  [Log] Password text box found and input text test1234 
+2018-03-18 14:19:38,639 INFO  [Log] Puch Enter 
+2018-03-18 14:19:38,683 INFO  [Log] Ok for log: lena.test.86@bk.ru, pass: test1234 
+2018-03-18 14:19:38,703 INFO  [Log] Correct  page https://www.facebook.com/?sk=welcome 
+2018-03-18 14:19:39,306 INFO  [Log] Found and Click User Navigation Label . 
+2018-03-18 14:19:41,661 INFO  [Log] Found and Click LogOut Link. 
+2018-03-18 14:19:44,472 INFO  [Log] Close and quit Driver 
+2018-03-18 14:19:44,473 INFO  [Log] ---------test case#9-------------- 
+2018-03-18 14:19:46,458 INFO  [Log] Get new Driver 
+2018-03-18 14:19:48,556 INFO  [Log] Go To Login Page 
+2018-03-18 14:19:48,572 INFO  [Log] Correct  page https://www.facebook.com/ 
+2018-03-18 14:19:49,016 INFO  [Log] E-mail text box found and input text  
+2018-03-18 14:19:49,377 INFO  [Log] Password text box found and input text test1234 
+2018-03-18 14:19:52,416 INFO  [Log] Puch Enter 
+2018-03-18 14:19:52,500 INFO  [Log] Ok for log: , pass: test1234 
+2018-03-18 14:19:52,530 INFO  [Log] Correct  page https://www.facebook.com/?sk=welcome 
+2018-03-18 14:19:53,007 INFO  [Log] Found and Click User Navigation Label . 
+2018-03-18 14:19:55,484 INFO  [Log] Found and Click LogOut Link. 
+2018-03-18 14:19:58,254 INFO  [Log] Close and quit Driver 
+2018-03-18 14:19:58,255 INFO  [Log] ---------test case#10-------------- 
+2018-03-18 14:20:00,262 INFO  [Log] Get new Driver 
+2018-03-18 14:20:02,403 INFO  [Log] Go To Login Page 
+2018-03-18 14:20:02,416 INFO  [Log] Correct  page https://www.facebook.com/ 
+2018-03-18 14:20:03,008 INFO  [Log] E-mail text box found and input text lena.test.86@bk.ru 
+2018-03-18 14:20:03,304 INFO  [Log] Password text box found and input text  
+2018-03-18 14:20:04,791 INFO  [Log] Puch Enter 
+2018-03-18 14:20:14,848 INFO  [Log] Fail for log: lena.test.86@bk.ru, pass:  
+2018-03-18 14:20:14,854 ERROR [Log] Wrong page. Current Url-<https://www.facebook.com/login.php?login_attempt=1&lwv=111>, expected URL -<https://www.facebook.com/?sk=welcome> 
+2018-03-18 14:20:24,865 ERROR [Log] Error with Go To User Label or LogOut link. 
+2018-03-18 14:20:27,612 INFO  [Log] Close and quit Driver 
+2018-03-18 14:20:27,613 INFO  [Log] ---------test case#11-------------- 
+2018-03-18 14:20:29,620 INFO  [Log] Get new Driver 
+2018-03-18 14:20:31,673 INFO  [Log] Go To Login Page 
+2018-03-18 14:20:31,690 INFO  [Log] Correct  page https://www.facebook.com/ 
+2018-03-18 14:20:32,091 INFO  [Log] E-mail text box found and input text  
+2018-03-18 14:20:32,383 INFO  [Log] Password text box found and input text  
+2018-03-18 14:20:33,884 INFO  [Log] Puch Enter 
+2018-03-18 14:20:43,896 INFO  [Log] Fail for log: , pass:  
+2018-03-18 14:20:43,903 ERROR [Log] Wrong page. Current Url-<https://www.facebook.com/login.php?login_attempt=1&lwv=111>, expected URL -<https://www.facebook.com/?sk=welcome> 
+2018-03-18 14:20:53,916 ERROR [Log] Error with Go To User Label or LogOut link. 
+2018-03-18 14:20:56,646 INFO  [Log] Close and quit Driver 
+2018-03-18 14:20:56,647 INFO  [Log] ---------test case#12-------------- 
+2018-03-18 14:20:58,647 INFO  [Log] Get new Driver 
+2018-03-18 14:21:00,730 INFO  [Log] Go To Login Page 
+2018-03-18 14:21:00,746 INFO  [Log] Correct  page https://www.facebook.com/ 
+2018-03-18 14:21:01,334 INFO  [Log] E-mail text box found and input text HGKWboirGFIzuKL 
+2018-03-18 14:21:01,710 INFO  [Log] Password text box found and input text test1234 
+2018-03-18 14:21:04,067 INFO  [Log] Puch Enter 
+2018-03-18 14:21:14,121 INFO  [Log] Fail for log: HGKWboirGFIzuKL, pass: test1234 
+2018-03-18 14:21:14,129 ERROR [Log] Wrong page. Current Url-<https://www.facebook.com/login/help.php?email=hgkwboirgfizukl&st=h_noacct&lwv=120&lwc=1348028>, expected URL -<https://www.facebook.com/?sk=welcome> 
+2018-03-18 14:21:24,171 ERROR [Log] Error with Go To User Label or LogOut link. 
+2018-03-18 14:21:26,921 INFO  [Log] Close and quit Driver 
+2018-03-18 14:21:26,922 INFO  [Log] ---------test case#13-------------- 
+2018-03-18 14:21:28,923 INFO  [Log] Get new Driver 
+2018-03-18 14:21:31,019 INFO  [Log] Go To Login Page 
+2018-03-18 14:21:31,035 INFO  [Log] Correct  page https://www.facebook.com/ 
+2018-03-18 14:21:31,645 INFO  [Log] E-mail text box found and input text lena.test.86@bk.ru 
+2018-03-18 14:21:32,046 INFO  [Log] Password text box found and input text UnKZdLkFmJ 
+2018-03-18 14:21:33,832 INFO  [Log] Puch Enter 
+2018-03-18 14:21:43,890 INFO  [Log] Fail for log: lena.test.86@bk.ru, pass: UnKZdLkFmJ 
+2018-03-18 14:21:43,896 ERROR [Log] Wrong page. Current Url-<https://www.facebook.com/login.php?login_attempt=1&lwv=111>, expected URL -<https://www.facebook.com/?sk=welcome> 
+2018-03-18 14:21:53,957 ERROR [Log] Error with Go To User Label or LogOut link. 
+2018-03-18 14:21:56,721 INFO  [Log] Close and quit Driver 
+2018-03-18 14:21:56,721 INFO  [Log] ---------test case#14-------------- 
+2018-03-18 14:21:58,740 INFO  [Log] Get new Driver 
+2018-03-18 14:22:00,838 INFO  [Log] Go To Login Page 
+2018-03-18 14:22:00,853 INFO  [Log] Correct  page https://www.facebook.com/ 
+2018-03-18 14:22:01,526 INFO  [Log] E-mail text box found and input text GyERdwLGHuBTwDAlNtucIT 
+2018-03-18 14:22:01,968 INFO  [Log] Password text box found and input text DmctcjWWXyRbPpT 
+2018-03-18 14:22:03,439 INFO  [Log] Puch Enter 
+2018-03-18 14:22:13,464 INFO  [Log] Fail for log: GyERdwLGHuBTwDAlNtucIT, pass: DmctcjWWXyRbPpT 
+2018-03-18 14:22:13,470 ERROR [Log] Wrong page. Current Url-<https://www.facebook.com/login.php?login_attempt=1&lwv=111>, expected URL -<https://www.facebook.com/?sk=welcome> 
+2018-03-18 14:22:23,486 ERROR [Log] Error with Go To User Label or LogOut link. 
+2018-03-18 14:22:26,265 INFO  [Log] Close and quit Driver 
+2018-03-18 14:22:26,266 INFO  [Log]    E---N---D- Test Cases for LogIn 
+2018-03-18 14:22:26,266 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+2018-03-18 14:22:26,278 INFO  [Log] ************************************************** 
+2018-03-18 14:22:26,279 INFO  [Log]     S-T-A-R-T- Test Cases for Post News 
+2018-03-18 14:22:26,279 INFO  [Log] ************************************************** 
+2018-03-18 14:22:28,277 INFO  [Log] Get new Driver 
+2018-03-18 14:22:30,343 INFO  [Log] Go To Login Page 
+2018-03-18 14:22:30,358 INFO  [Log] Correct  page https://www.facebook.com/ 
+2018-03-18 14:22:30,940 INFO  [Log] E-mail text box found and input text lena.test.86@bk.ru 
+2018-03-18 14:22:31,298 INFO  [Log] Password text box found and input text test1234 
+2018-03-18 14:22:34,348 INFO  [Log] Puch Enter 
+2018-03-18 14:22:34,929 INFO  [Log] User Navigation Label found and click. 
+2018-03-18 14:22:34,930 INFO  [Log] ---------test case#15-------------- 
+2018-03-18 14:22:36,213 INFO  [Log] Find and Click TextArea 
+2018-03-18 14:22:39,574 INFO  [Log] Write news <Button  D �u �H� �-�5 .> 
+2018-03-18 14:22:39,759 INFO  [Log] Click Post Button 
+2018-03-18 14:22:49,983 INFO  [Log] Result for waitText is false for <Button  D �u �H� �-�5 .> 
+2018-03-18 14:22:50,017 INFO  [Log] Successful post news: Button  D �u �H� �-�5 . 
+2018-03-18 14:22:50,020 INFO  [Log] ---------test case#16-------------- 
+2018-03-18 14:22:50,500 INFO  [Log] Find and Click TextArea 
+2018-03-18 14:22:51,851 INFO  [Log] Write news <Enter  / �, ��� rU]b .> 
+2018-03-18 14:22:52,105 INFO  [Log] Push <CTRL>+<Enter> 
+2018-03-18 14:23:03,582 INFO  [Log] Result for waitText is false for <Enter  / �, ��� rU]b .> 
+2018-03-18 14:23:03,621 INFO  [Log] Successful post news: Enter  / �, ��� rU]b . 
+2018-03-18 14:23:03,636 INFO  [Log] ---------test case#17-------------- 
+2018-03-18 14:23:04,032 INFO  [Log] Find and Click TextArea 
+2018-03-18 14:23:06,016 INFO  [Log] Write news <https://en.wikipedia.org/wiki/Tinker_Bell> 
+2018-03-18 14:23:06,164 INFO  [Log] Click Post Button 
+2018-03-18 14:23:07,934 INFO  [Log] Result for waitText is true for <https://en.wikipedia.org/wiki/Tinker_Bell> 
+2018-03-18 14:23:07,993 INFO  [Log] Successful post news: https://en.wikipedia.org/wiki/Tinker_Bell 
+2018-03-18 14:23:07,998 INFO  [Log] ---------test case#18-------------- 
+2018-03-18 14:23:08,517 INFO  [Log] Find and Click TextArea 
+2018-03-18 14:23:10,548 INFO  [Log] Write news <https://wiki.eclipse.org/Ssh_fingerprints> 
+2018-03-18 14:23:10,685 INFO  [Log] Push <CTRL>+<Enter> 
+2018-03-18 14:23:12,339 INFO  [Log] Result for waitText is true for <https://wiki.eclipse.org/Ssh_fingerprints> 
+2018-03-18 14:23:12,413 INFO  [Log] Successful post news: https://wiki.eclipse.org/Ssh_fingerprints 
+2018-03-18 14:23:12,418 INFO  [Log] ---------test case#19-------------- 
+2018-03-18 14:23:12,907 INFO  [Log] Find and Click TextArea 
+2018-03-18 14:23:23,511 INFO  [Log] Write news <https://wiki.eclipse.org/Main_Page  � �p q�w �G�� _Q��� Mȸ�q� LA.��-� q;��=G�U �R=Hz�F=� �L:�.`�1�� �v��o�nh�Yq ��C�o%OO�uh� �W�l9o8��Y��z `�z���,Z0/�Q�� �umca/��Ox���Dm I7GYbu���f?�P5]� A;���8���R��w�n�� ��:EZ��j�U�d�j�-�D P��vs�yP���j��./�B� .> 
+2018-03-18 14:23:23,699 INFO  [Log] Click Post Button 
+2018-03-18 14:23:34,255 INFO  [Log] Result for waitText is false for <https://wiki.eclipse.org/Main_Page  � �p q�w �G�� _Q��� Mȸ�q� LA.��-� q;��=G�U �R=Hz�F=� �L:�.`�1�� �v��o�nh�Yq ��C�o%OO�uh� �W�l9o8��Y��z `�z���,Z0/�Q�� �umca/��Ox���Dm I7GYbu���f?�P5]� A;���8���R��w�n�� ��:EZ��j�U�d�j�-�D P��vs�yP���j��./�B� .> 
+2018-03-18 14:23:34,291 INFO  [Log] Successful post news: https://wiki.eclipse.org/Main_Page  � �p q�w �G�� _Q��� Mȸ�q� LA.��-� q;��=G�U �R=Hz�F=� �L:�.`�1�� �v��o�nh�Yq ��C�o%OO�uh� �W�l9o8��Y��z `�z���,Z0/�Q�� �umca/��Ox���Dm I7GYbu���f?�P5]� A;���8���R��w�n�� ��:EZ��j�U�d�j�-�D P��vs�yP���j��./�B� . 
+2018-03-18 14:23:34,415 INFO  [Log] Link <https://wiki.eclipse.org/Main_Page> is Displayed 
+2018-03-18 14:23:34,419 INFO  [Log] ---------test case#20-------------- 
+2018-03-18 14:23:34,792 INFO  [Log] Find and Click TextArea 
+2018-03-18 14:23:45,540 INFO  [Log] Write news <https://disney.ru/characters/din-din  � Y: :�� �F`� l�3'; ,p���` S�Lm�y� y7o�DMP] ������r�� VP[0�H=:�h ��5w�uw�S�� `1��f���r�3� Jay��Al��t!p� =Y�XSeL�gX�0x� v��c����vS�Zt�� ;b,�`�[_Uu�����0 Zx73�V�3�Q����-� �]�Q�L�M��Sa-�5KD� G�q-qDx����O8]ooQ9/ .> 
+2018-03-18 14:23:45,765 INFO  [Log] Push <CTRL>+<Enter> 
+2018-03-18 14:23:57,988 INFO  [Log] Result for waitText is false for <https://disney.ru/characters/din-din  � Y: :�� �F`� l�3'; ,p���` S�Lm�y� y7o�DMP] ������r�� VP[0�H=:�h ��5w�uw�S�� `1��f���r�3� Jay��Al��t!p� =Y�XSeL�gX�0x� v��c����vS�Zt�� ;b,�`�[_Uu�����0 Zx73�V�3�Q����-� �]�Q�L�M��Sa-�5KD� G�q-qDx����O8]ooQ9/ .> 
+2018-03-18 14:23:58,022 INFO  [Log] Successful post news: https://disney.ru/characters/din-din  � Y: :�� �F`� l�3'; ,p���` S�Lm�y� y7o�DMP] ������r�� VP[0�H=:�h ��5w�uw�S�� `1��f���r�3� Jay��Al��t!p� =Y�XSeL�gX�0x� v��c����vS�Zt�� ;b,�`�[_Uu�����0 Zx73�V�3�Q����-� �]�Q�L�M��Sa-�5KD� G�q-qDx����O8]ooQ9/ . 
+2018-03-18 14:24:08,114 INFO  [Log] Link <https://disney.ru/characters/din-din> is Displayed 
+2018-03-18 14:24:08,131 INFO  [Log] ---------test case#21-------------- 
+2018-03-18 14:24:13,653 INFO  [Log] true for delete last news 
+2018-03-18 14:24:13,885 INFO  [Log] Found and Click User Navigation Label . 
+2018-03-18 14:24:16,102 INFO  [Log] Found and Click LogOut Link. 
+2018-03-18 14:24:19,061 INFO  [Log] Close and quit Driver 
+2018-03-18 14:24:19,062 INFO  [Log]    E---N---D- Test Cases for Post News 
+2018-03-18 14:24:19,062 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+2018-03-18 14:24:19,073 INFO  [Log] ************************************************** 
+2018-03-18 14:24:19,074 INFO  [Log]     S-T-A-R-T- Test Cases for Send Message 
+2018-03-18 14:24:19,074 INFO  [Log] ************************************************** 
+2018-03-18 14:24:21,053 INFO  [Log] Get new Driver 
+2018-03-18 14:24:23,284 INFO  [Log] Go To Login Page 
+2018-03-18 14:24:23,297 INFO  [Log] Correct  page https://www.facebook.com/ 
+2018-03-18 14:24:23,874 INFO  [Log] E-mail text box found and input text lena.test.86@bk.ru 
+2018-03-18 14:24:24,245 INFO  [Log] Password text box found and input text test1234 
+2018-03-18 14:24:27,230 INFO  [Log] Puch Enter 
+2018-03-18 14:24:28,283 INFO  [Log] Go to messenger 
+2018-03-18 14:24:28,284 INFO  [Log] ---------test case#22-------------- 
+2018-03-18 14:24:32,838 INFO  [Log] Click Text Field 
+2018-03-18 14:24:35,264 INFO  [Log] Find textArea. Enter message <Enter   [ Je K=x %g.P _n7!a nF9KM` ];za1Md ,tyH6]wZ 2NEMYHLqH gqQ%�5`-gS .>. Push Enter. 
+2018-03-18 14:24:35,475 INFO  [Log] Result for waitText is true for <Enter   [ Je K=x %g.P _n7!a nF9KM` ];za1Md ,tyH6]wZ 2NEMYHLqH gqQ%�5`-gS .> 
+2018-03-18 14:24:35,623 INFO  [Log] Successful send message: Enter   [ Je K=x %g.P _n7!a nF9KM` ];za1Md ,tyH6]wZ 2NEMYHLqH gqQ%�5`-gS . 
+2018-03-18 14:24:35,625 INFO  [Log] ---------test case#23-------------- 
+2018-03-18 14:24:35,727 INFO  [Log] Click Text Field 
+2018-03-18 14:24:38,141 INFO  [Log] Find textArea. Enter message <Button   f 1: D7O =Ie! ?f33P KRVK?/ hq6Jtg2 WS4t4Iz9 3by,.VUVc 42T%.AN)B4 `B!ntt2Z)3� .>. Click Send. 
+2018-03-18 14:24:38,225 INFO  [Log] Result for waitText is true for <Button   f 1: D7O =Ie! ?f33P KRVK?/ hq6Jtg2 WS4t4Iz9 3by,.VUVc 42T%.AN)B4 `B!ntt2Z)3� .> 
+2018-03-18 14:24:38,438 INFO  [Log] Successful send message: Button   f 1: D7O =Ie! ?f33P KRVK?/ hq6Jtg2 WS4t4Iz9 3by,.VUVc 42T%.AN)B4 `B!ntt2Z)3� . 
+2018-03-18 14:24:38,609 INFO  [Log] Found and Click User Navigation Label . 
+2018-03-18 14:24:40,824 INFO  [Log] Found and Click LogOut Link. 
+2018-03-18 14:24:43,701 INFO  [Log] Close and quit Driver 
+2018-03-18 14:24:43,702 INFO  [Log]    E---N---D- Test Cases for Send Message 
+2018-03-18 14:24:43,702 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 

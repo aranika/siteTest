@@ -35,7 +35,7 @@ public class MessengerPage {
 
 	public void goToDialogFirstFrind() {
 		this.clickFirstFriend();
-		Validation.pageURL(driver, this.getUrlPage()+"anastasia.dunets");
+		Validation.pageURL(driver, this.getUrlPage()+"nastya.dest.9");
 	}
 
 	public void sendMessageClickButton(String message) {

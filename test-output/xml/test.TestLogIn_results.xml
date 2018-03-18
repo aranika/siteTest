@@ -4,23 +4,23 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="153,801">
+           time="145,770">
   <properties />
   
   
-            <testcase name="testLoginPuchEnter" time="12,506" classname="test.TestLogIn" />
-                <testcase name="testLoginClickButton" time="14,374" classname="test.TestLogIn" />
-                <testcase name="testLoginClickButton" time="5,219" classname="test.TestLogIn" />
-                <testcase name="testLoginPuchEnter" time="13,333" classname="test.TestLogIn" />
-                <testcase name="testLoginClickButton" time="13,598" classname="test.TestLogIn" />
-                <testcase name="testLoginClickButton" time="13,826" classname="test.TestLogIn" />
-                <testcase name="testLoginPuchEnter" time="12,737" classname="test.TestLogIn" />
-                <testcase name="testLoginPuchEnter" time="5,080" classname="test.TestLogIn" />
-                <testcase name="testLoginPuchEnter" time="13,716" classname="test.TestLogIn" />
-                <testcase name="testLoginPuchEnter" time="12,766" classname="test.TestLogIn" />
-                <testcase name="testLoginClickButton" time="5,097" classname="test.TestLogIn" />
-                <testcase name="testLoginClickButton" time="13,225" classname="test.TestLogIn" />
-                <testcase name="testLoginPuchEnter" time="5,363" classname="test.TestLogIn" />
-                <testcase name="testLoginClickButton" time="12,961" classname="test.TestLogIn" />
+            <testcase name="testLoginPuchEnter" time="12,619" classname="test.TestLogIn" />
+                <testcase name="testLoginPuchEnter" time="12,861" classname="test.TestLogIn" />
+                <testcase name="testLoginClickButton" time="13,166" classname="test.TestLogIn" />
+                <testcase name="testLoginPuchEnter" time="12,439" classname="test.TestLogIn" />
+                <testcase name="testLoginClickButton" time="13,288" classname="test.TestLogIn" />
+                <testcase name="testLoginClickButton" time="13,278" classname="test.TestLogIn" />
+                <testcase name="testLoginPuchEnter" time="4,010" classname="test.TestLogIn" />
+                <testcase name="testLoginPuchEnter" time="13,382" classname="test.TestLogIn" />
+                <testcase name="testLoginClickButton" time="4,250" classname="test.TestLogIn" />
+                <testcase name="testLoginClickButton" time="4,016" classname="test.TestLogIn" />
+                <testcase name="testLoginPuchEnter" time="3,958" classname="test.TestLogIn" />
+                <testcase name="testLoginClickButton" time="13,392" classname="test.TestLogIn" />
+                <testcase name="testLoginClickButton" time="12,898" classname="test.TestLogIn" />
+                <testcase name="testLoginPuchEnter" time="12,213" classname="test.TestLogIn" />
       
 </testsuite>

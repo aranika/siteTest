@@ -48,21 +48,7 @@ public class FindEl {
 		WebElement w=list.get(n-1);
 		return w;
 	}
-	//	public static String getAttributeByCss(String attribute, String selector, WebDriver driver) {
-	//		if(findElByCssIsDisplayed(selector, driver)) {
-	//			WebElement el= (driver.findElement(By.cssSelector(selector)));
-	//			return el.getAttribute(attribute);
-	//		}
-	//		return "error";
-	//	}
-	//
-	//	public static String getValueByXPath(String xpathExpression, WebDriver driver) {
-	//		WebElement el=(driver.findElement(By.xpath(xpathExpression)));
-	//		if(findElByXPathIsDisplayed(xpathExpression, driver)) {
-	//			return el.getAttribute("value");
-	//		}
-	//		return "error";
-	//	}
+	
 
 	public static String getAttribute(String attribute, By selector, WebDriver driver) {
 		if(findElementIsDisplayed(selector, driver)) {

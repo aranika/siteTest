@@ -37,7 +37,17 @@ public class MyDriver {
 			Log.error(e+" for textArea");
 		} 
 	}
-
+	public static void waitElement(WebDriver driver, String element) {
+		DesiredCapabilities capabilities = new DesiredCapabilities();
+		capabilities.setCapability(CapabilityType.PAGE_LOAD_STRATEGY, "eager");
+		WebDriverWait wait = new WebDriverWait(driver, 100);
+		try {
+			wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("textArea")));
+			wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("textArea")));	
+		} catch (Exception e) {
+			Log.error(e+" for "+element);
+		} 
+	}
 	public static void waitText(WebDriver driver, By newPost, String value) {
 		boolean x;
 		try {

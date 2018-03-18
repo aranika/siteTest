@@ -20,14 +20,14 @@ public class TestLogIn {
 		return s;
 	}
 
-	@Test (groups= {"LogIn"}, dataProvider = "dp", priority=20)
+	@Test (groups= {"LogIn"}, dataProvider = "dp", priority=10)
 	@Parameters(value= {"name","password"})
 	public void testLoginClickButton(String name, String password) {
 		objLogin.toLoginClickButton(name, password); 
 		Validation.logIn(driver, name, password);		
 	}
 
-	@Test (groups= {"LogIn"}, dataProvider = "dp", priority=10)
+	@Test (groups= {"LogIn"}, dataProvider = "dp", priority=20)
 	@Parameters(value= {"name","password"})
 	public void testLoginPuchEnter(String name, String password) {
 		objLogin.toLoginPuchEnter(name, password); 
@@ -37,6 +37,7 @@ public class TestLogIn {
 	@BeforeMethod(groups= {"LogIn"})
 	public void before() {
 		i=i+1;
+		System.out.println(i);
 		Log.info("---------test case#"+i+"--------------");
 		driver=MyDriver.getChromeDriver();
 		objLogin=new LoginPage(driver);

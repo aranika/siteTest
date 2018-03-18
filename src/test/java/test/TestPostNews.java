@@ -13,7 +13,7 @@ public class TestPostNews {
 	NewsFeedPage objNewsFeed;
 	GeneralPage objGeneral;
 	String message;
-	Integer i=0;
+	Integer i=14;
 
 	@DataProvider(name="dp")
 	public static Object[] testData() {
@@ -21,49 +21,49 @@ public class TestPostNews {
 		return s;
 	}
 
-	@Test (groups= {"News","Text"}, priority=20, enabled=true)
+	@Test (groups= {"News","Text"}, priority=150, enabled=true)
 	public void testPostTextClickButton(){
-		message="Button"+RandomWord.engSentence(5);
+		message="Button"+RandomWord.sentence(5);
 		objNewsFeed.postNewsClickButton(message);
 	}
 
-	@Test (groups= {"News", "Link"}, dataProvider = "dp", priority=30, enabled=true)
+	@Test (groups= {"News", "Link"}, dataProvider = "dp", priority=170, enabled=true)
 	@Parameters(value= {"link"})
 	public void testPostLinksClickButton(String link)  {
 		message=link;
 		objNewsFeed.postNewsClickButton(message);
 	}
 
-	@Test (groups= {"News", "Link", "Text"}, dataProvider = "dp", priority=40, enabled=true)
+	@Test (groups= {"News", "Link", "Text"}, dataProvider = "dp", priority=190, enabled=true)
 	@Parameters(value= {"link"})
 	public void testPostLinksTextClickButton(String link) {
-		message=link+ RandomWord.engSentence(20);
+		message=link+ RandomWord.sentence(20);
 		objNewsFeed.postNewsClickButton(message);
 		objNewsFeed.findPostLink(link);
 	}
 
-	@Test (groups= {"News","Text"}, priority=120, enabled=true)
+	@Test (groups= {"News","Text"}, priority=160, enabled=true)
 	public void testPostTextPushEnter() {
-		message="Enter"+RandomWord.engSentence(5);
+		message="Enter"+RandomWord.sentence(5);
 		objNewsFeed.postNewsPushEnter(message);
 	}
 
-	@Test (groups= {"News", "Link"}, dataProvider = "dp", priority=140,enabled=true)
+	@Test (groups= {"News", "Link"}, dataProvider = "dp", priority=180,enabled=true)
 	@Parameters(value= {"link"})
 	public void testPostLinksPushEnter(String link)  {
 		message=link;
 		objNewsFeed.postNewsPushEnter(message);
 	}
 
-	@Test (groups= {"News", "Link", "Text"}, dataProvider = "dp", priority=160,enabled=true)
+	@Test (groups= {"News", "Link", "Text"}, dataProvider = "dp", priority=200,enabled=true)
 	@Parameters(value= {"link"})
 	public void testPostLinksTextPushEnter(String link)  {
-		message=link+ RandomWord.engSentence(20);
+		message=link+ RandomWord.sentence(20);
 		objNewsFeed.postNewsPushEnter(message);
 		objNewsFeed.findPostLink(link);
 	}
 
-	@Test (groups= {"News", "Delete"}, priority=420,enabled=true)
+	@Test (groups= {"News", "Delete"}, priority=210,enabled=true)
 	public void testDeleteLastNews() {
 		objNewsFeed.deleteLastNews();
 	}
@@ -84,6 +84,7 @@ public class TestPostNews {
 	@BeforeMethod (groups= {"News"})
 	public void beforeM() {
 		i=i+1;
+		System.out.println(i);
 		Log.info("---------test case#"+i+"--------------");
 	}
 

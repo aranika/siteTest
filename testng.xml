@@ -5,17 +5,17 @@
 		<listener class-name="org.uncommons.reportng.HTMLReporter" />
 		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
 	</listeners>
-	
+
 	<test name="test suit">
 
 		<groups>
 			<define name="all">
-				<include name="LogIn"></include>
 				<include name="Message"></include>
 				<include name="News"></include>
+				<include name="LogIn"></include>
 			</define>
 			<run>
-				<include name="All" />
+				<include name="all"></include>
 			</run>
 		</groups>
 		<packages>

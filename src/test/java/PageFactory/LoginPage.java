@@ -58,8 +58,8 @@ public class LoginPage {
 
 	public static void logIn(LoginPage objLogin, WebDriver webDriver) {
 		goToLoginPage(objLogin, webDriver);
-		String strEmail=(String)(new Users()).getUsers()[0][0];
-		String strPassword=(String)(new Users()).getUsers()[0][1];
+		String strEmail=(String)(new Users()).getAuthorizedUsers()[0][0];
+		String strPassword=(String)(new Users()).getAuthorizedUsers()[0][1];
 		objLogin.toLoginPuchEnter(strEmail, strPassword);
 	}
 }

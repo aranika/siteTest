@@ -6,15 +6,14 @@ public class Log {
 	private static Logger Log = Logger.getLogger(Log.class.getName());
 
 	public static void startTestCases(String nameFunction) {
-		Log.info("****************************************************************");
-		Log.info("$$$$$$$$$$     S-T-A-R-T- Test Cases for "+nameFunction+ "       $$$$$$$$$$$$$");
-		Log.info("****************************************************************");
+		Log.info("**************************************************");
+		Log.info("    S-T-A-R-T- Test Cases for "+nameFunction);
+		Log.info("**************************************************");
 	}
 
 	public static void endTestCases(String nameFunction) {
-		Log.info("XXXXXXX         -E---N---D- Test Cases for "+nameFunction+"       XXXXXXXX");
+		Log.info("   E---N---D- Test Cases for "+nameFunction);
 		Log.info("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
-		Log.info("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
 	}
 
 	public static void info(String message) {

@@ -1,7 +1,6 @@
 package PageFactory;
 
 import org.openqa.selenium.*;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.*;
 import utility.*;
 
@@ -22,7 +21,7 @@ public class NewsFeedPage {
 	}
 
 	public void deleteLastNews() {
-		driver.navigate().refresh();
+//		driver.navigate().refresh();
 		String news=driver.findElement(newPost).getText();
 		driver.findElement(optionPost).click();
 		driver.findElement(deletePost).click();
@@ -57,14 +56,13 @@ public class NewsFeedPage {
 		Validation.postNews(driver, textArea, newPost, message);
 	}
 
-	public void findPostLink(String link) {	
-		Actions actions = new Actions(driver);
-		actions.sendKeys(Keys.F5);
+	public void findPostLink(String link) {	 
+		MyDriver.waitElement(driver, textArea);
 		try {
 			FindEl.findElByCssIsDisplayed("div>[href='"+link+"']", driver);
 			Log.info("Link <"+link+"> is Displayed");
 		} catch (Exception e) {
-			Log.error(link+" is not Desplayed");
+			Log.error("Link <"+link+"> is not Displayed");
 			System.out.println("div>[href='"+link+"']");
 		}
 	}
